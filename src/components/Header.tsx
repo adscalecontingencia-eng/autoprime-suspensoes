@@ -8,7 +8,8 @@ const Header = () => {
     { href: "#inicio", label: "Início" },
     { href: "#sobre", label: "Sobre" },
     { href: "#servicos", label: "Serviços" },
-    { href: "#videos", label: "Trabalhos" },
+    { href: "#galeria", label: "Trabalhos" },
+    { href: "#depoimentos", label: "Depoimentos" },
     { href: "#localizacao", label: "Localização" },
   ];
 
@@ -18,10 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="font-display font-bold text-xl text-primary-foreground">AP</span>
-            </div>
-            <div className="hidden sm:block">
+            <div>
               <span className="font-display font-bold text-lg text-foreground">AUTO PRIME</span>
               <span className="block text-xs text-muted-foreground -mt-1">SUSPENSÕES</span>
             </div>

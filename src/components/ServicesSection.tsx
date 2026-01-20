@@ -1,4 +1,4 @@
-import { Settings, Car, Gauge, CircleDot, Layers, Zap } from "lucide-react";
+import { Settings, Car, Gauge, CircleDot, Layers, Zap, Cog } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -11,6 +11,11 @@ const ServicesSection = () => {
       icon: CircleDot,
       title: "Molas e Coxins",
       description: "Troca de molas, coxins e batentes para melhor conforto e estabilidade.",
+    },
+    {
+      icon: Cog,
+      title: "Manutenção na Direção",
+      description: "Reparo e troca de componentes da caixa de direção hidráulica e elétrica.",
     },
     {
       icon: Gauge,
