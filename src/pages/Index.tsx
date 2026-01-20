@@ -2,9 +2,11 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
-import VideosSection from "@/components/VideosSection";
+import GallerySection from "@/components/GallerySection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -14,10 +16,12 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <VideosSection />
+        <GallerySection />
+        <TestimonialsSection />
         <LocationSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
