@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import PromoBanner from "@/components/PromoBanner";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
 import GallerySection from "@/components/GallerySection";
 import BrandsSection from "@/components/BrandsSection";
@@ -13,6 +12,7 @@ import FAQSection from "@/components/FAQSection";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ChatBot from "@/components/ChatBot";
 
 const Index = () => {
   return (
@@ -22,7 +22,6 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutSection />
-        <StatsSection />
         <ServicesSection />
         <GallerySection />
         <BrandsSection />
@@ -34,6 +33,7 @@ const Index = () => {
       </main>
       <Footer />
       <WhatsAppButton />
+      <ChatBot />
     </div>
   );
 };

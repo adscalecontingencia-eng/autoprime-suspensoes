@@ -17,18 +17,32 @@ const TestimonialsSection = () => {
       initials: "MF",
     },
     {
-      name: "João Paulo",
-      role: "VW Gol 2018",
+      name: "José Roberto",
+      role: "VW Fusca 1972",
       rating: 5,
-      text: "Melhor oficina de suspensão da região! Resolveram um problema que outras oficinas não conseguiram. Preço honesto e trabalho impecável.",
-      initials: "JP",
+      text: "Tenho um Fusca antigo e eles souberam exatamente o que fazer. Encontraram as peças certas e o carro ficou como novo. Profissionais de verdade!",
+      initials: "JR",
     },
     {
       name: "Ana Beatriz",
-      role: "Chevrolet Onix 2020",
+      role: "Chevrolet Opala 1985",
+      rating: 5,
+      text: "Meu Opala precisava de uma revisão completa na suspensão. Fizeram um trabalho impecável respeitando a originalidade do carro. Muito satisfeita!",
+      initials: "AB",
+    },
+    {
+      name: "Pedro Henrique",
+      role: "Ford Corcel 1978",
+      rating: 5,
+      text: "Difícil encontrar quem trabalhe bem com carros antigos. A equipe da Auto Prime tem experiência e dedicação. Meu Corcel está rodando liso!",
+      initials: "PH",
+    },
+    {
+      name: "Luciana Santos",
+      role: "Toyota Corolla 2022",
       rating: 5,
       text: "Atendimento nota 10! Fizeram o alinhamento e balanceamento do meu carro rapidamente. A diferença foi incrível. Super recomendo!",
-      initials: "AB",
+      initials: "LS",
     },
   ];
 
