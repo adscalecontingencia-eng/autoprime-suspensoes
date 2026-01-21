@@ -19,15 +19,18 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <a href="#inicio" className="flex items-center">
+        <div className="flex items-center justify-between h-12 md:h-20">
+          {/* Logo - Hidden on mobile */}
+          <a href="#inicio" className="hidden md:flex items-center">
             <img 
               src={logo} 
               alt="Auto Prime Suspensões" 
-              className="h-10 md:h-12 w-auto"
+              className="h-12 w-auto"
             />
           </a>
+          
+          {/* Spacer for mobile to push menu to right */}
+          <div className="md:hidden" />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8">

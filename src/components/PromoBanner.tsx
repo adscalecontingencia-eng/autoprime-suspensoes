@@ -20,35 +20,44 @@ const PromoBanner = () => {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.1)_50%,transparent_75%)] bg-[length:20px_20px] animate-pulse" />
       </div>
 
-      <div className="container mx-auto px-4 py-3 relative z-10">
-        <div className="flex items-center justify-center gap-4 flex-wrap text-primary-foreground">
-          <div className="flex items-center gap-2">
+      <div className="container mx-auto px-4 py-2 md:py-3 relative z-10">
+        <div className="flex items-center justify-center gap-2 md:gap-4 flex-wrap text-primary-foreground">
+          {/* Desktop version */}
+          <div className="hidden md:flex items-center gap-2">
             <Zap className="w-5 h-5 animate-pulse" />
-            <span className="font-display font-bold text-sm md:text-base">
+            <span className="font-display font-bold text-base">
               OFERTA ESPECIAL
             </span>
           </div>
           
           <span className="hidden md:inline text-primary-foreground/60">|</span>
           
-          <span className="text-sm md:text-base font-medium">
+          <span className="hidden md:inline text-base font-medium">
             <strong>20% OFF</strong> na revisão completa de suspensão
           </span>
           
           <span className="hidden md:inline text-primary-foreground/60">|</span>
           
-          <div className="flex items-center gap-1 text-sm">
+          <div className="hidden md:flex items-center gap-1 text-sm">
             <Clock className="w-4 h-4" />
             <span>Válido até o final do mês</span>
+          </div>
+
+          {/* Mobile version - simplified */}
+          <div className="flex md:hidden items-center gap-2">
+            <Zap className="w-4 h-4 animate-pulse" />
+            <span className="font-display font-bold text-xs">
+              20% OFF Suspensão
+            </span>
           </div>
 
           <Button
             size="sm"
             variant="secondary"
-            className="bg-background text-primary hover:bg-background/90 font-display text-xs"
-            onClick={() => window.open("https://wa.me/5531999999999?text=Olá! Vi a promoção de 20% OFF na revisão de suspensão e gostaria de agendar.", "_blank")}
+            className="bg-background text-primary hover:bg-background/90 font-display text-xs px-3 py-1 h-7 md:h-8"
+            onClick={() => window.open("https://wa.me/5531988480488?text=Olá! Vi a promoção de 20% OFF na revisão de suspensão e gostaria de agendar.", "_blank")}
           >
-            AGENDAR AGORA
+            AGENDAR
           </Button>
         </div>
       </div>
