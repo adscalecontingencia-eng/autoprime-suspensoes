@@ -20,9 +20,9 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 lg:py-32 bg-hero-gradient">
+    <section id="sobre" className="py-12 md:py-20 lg:py-32 bg-hero-gradient">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           {/* Video Placeholder */}
           <div className="relative">
             <div className="aspect-video rounded-2xl bg-card-gradient border border-border overflow-hidden shadow-card">
@@ -50,17 +50,17 @@ const AboutSection = () => {
             <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-4">
               SOBRE NÓS
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
               CONHEÇA A <span className="text-gradient">AUTO PRIME</span>
             </h2>
-            <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+            <p className="text-muted-foreground text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
               Somos especialistas em suspensão automotiva, oferecendo serviços de alta qualidade 
               com profissionais experientes e equipamentos de ponta. Nossa missão é garantir 
               segurança e conforto para você e sua família nas estradas.
             </p>
 
             {/* Features */}
-            <div className="space-y-4 mb-8">
+            <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-secondary/50 border border-border">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">

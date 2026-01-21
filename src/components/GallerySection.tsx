@@ -36,17 +36,17 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="galeria" className="py-20 lg:py-32 bg-hero-gradient">
+    <section id="galeria" className="py-12 md:py-20 lg:py-32 bg-hero-gradient">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
+          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-3 md:mb-4">
             NOSSOS TRABALHOS
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
             ANTES E <span className="text-gradient">DEPOIS</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-sm md:text-lg">
             Confira alguns dos nossos trabalhos e veja a qualidade do serviço que oferecemos. Clique nas imagens para mais detalhes.
           </p>
         </div>
@@ -123,7 +123,7 @@ const GallerySection = () => {
                 {selectedImage.description}
               </p>
               <a
-                href="https://wa.me/5531999999999?text=Olá! Gostaria de saber mais sobre esse serviço."
+                href="https://wa.me/5531988480488?text=Olá! Gostaria de saber mais sobre esse serviço."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-display font-semibold hover:shadow-glow transition-all"

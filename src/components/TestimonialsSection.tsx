@@ -47,27 +47,27 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 lg:py-32 bg-background">
+    <section id="depoimentos" className="py-12 md:py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
+          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-3 md:mb-4">
             DEPOIMENTOS
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
             O QUE NOSSOS <span className="text-gradient">CLIENTES</span> DIZEM
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-sm md:text-lg">
             A satisfação dos nossos clientes é o que nos motiva a continuar oferecendo o melhor serviço.
           </p>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative p-6 lg:p-8 rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all duration-300 shadow-card"
+              className="relative p-5 md:p-6 lg:p-8 rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all duration-300 shadow-card"
             >
               {/* Quote Icon */}
               <div className="absolute top-6 right-6 opacity-20">
@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
               </div>
 
               {/* Text */}
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4 md:mb-6">
                 "{testimonial.text}"
               </p>
 

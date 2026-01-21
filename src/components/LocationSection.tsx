@@ -20,29 +20,29 @@ const LocationSection = () => {
     {
       icon: Phone,
       label: "Telefone",
-      value: "(31) 99999-9999",
+      value: "(31) 98848-0488",
       subValue: "Ligue agora",
     },
   ];
 
   return (
-    <section id="localizacao" className="py-20 lg:py-32 bg-background">
+    <section id="localizacao" className="py-12 md:py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
+          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-3 md:mb-4">
             LOCALIZAÇÃO
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
             VENHA NOS <span className="text-gradient">VISITAR</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-sm md:text-lg">
             Estamos localizados no bairro Manoel Correa, em Conselheiro Lafaiete. 
             Clique no mapa para traçar sua rota!
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
           {/* Map */}
           <div className="relative">
             <a
@@ -106,7 +106,7 @@ const LocationSection = () => {
                 Traçar Rota
               </a>
               <a
-                href="https://wa.me/5531999999999?text=Olá! Gostaria de mais informações."
+                href="https://wa.me/5531988480488?text=Olá! Gostaria de mais informações."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 px-6 py-4 border border-border text-foreground rounded-lg font-display font-semibold hover:bg-secondary transition-colors"

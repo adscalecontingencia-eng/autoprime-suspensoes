@@ -39,7 +39,7 @@ const QuoteFormSection = () => {
     // Redireciona para WhatsApp com os dados
     const whatsappMessage = `Olá! Gostaria de solicitar um orçamento.%0A%0A*Nome:* ${formData.name}%0A*Telefone:* ${formData.phone}%0A*Veículo:* ${formData.vehicle}%0A*Serviço:* ${formData.service}%0A*Descrição:* ${formData.message}`;
     
-    window.open(`https://wa.me/5531999999999?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/5531988480488?text=${whatsappMessage}`, '_blank');
 
     toast({
       title: "Orçamento enviado!",
@@ -51,16 +51,16 @@ const QuoteFormSection = () => {
   };
 
   return (
-    <section id="orcamento" className="py-20 bg-secondary">
+    <section id="orcamento" className="py-12 md:py-20 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
               SOLICITE SEU <span className="text-primary">ORÇAMENTO</span>
             </h2>
             <p className="text-muted-foreground mb-6">
@@ -93,7 +93,7 @@ const QuoteFormSection = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-8 shadow-xl">
+            <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-5 md:p-8 shadow-xl">
               <div className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
