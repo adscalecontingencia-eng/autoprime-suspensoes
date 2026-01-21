@@ -17,25 +17,25 @@ const BusinessHoursSection = () => {
   const todayIndex = dayMap[today];
 
   return (
-    <section className="py-16 bg-card">
+    <section className="py-12 md:py-16 bg-card">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                <Clock className="w-6 h-6 text-primary" />
+            <div className="flex items-center gap-3 mb-4 md:mb-6">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                <Clock className="w-5 h-5 md:w-6 md:h-6 text-primary" />
               </div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
+              <h2 className="font-display text-xl md:text-3xl lg:text-4xl font-bold text-foreground">
                 HORÁRIO DE <span className="text-primary">FUNCIONAMENTO</span>
               </h2>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-2 md:space-y-3">
               {hours.map((item, index) => (
                 <motion.div
                   key={item.day}
@@ -43,7 +43,7 @@ const BusinessHoursSection = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   viewport={{ once: true }}
-                  className={`flex justify-between items-center p-4 rounded-xl transition-all ${
+                  className={`flex justify-between items-center p-3 md:p-4 rounded-xl transition-all ${
                     todayIndex === index
                       ? "bg-primary/20 border-2 border-primary"
                       : "bg-secondary border border-border"
@@ -79,13 +79,13 @@ const BusinessHoursSection = () => {
               
               <div className="space-y-4">
                 <a
-                  href="tel:+5531999999999"
-                  className="flex items-center gap-4 p-4 bg-background/10 backdrop-blur-sm rounded-xl hover:bg-background/20 transition-colors"
+                  href="tel:+5531988480488"
+                  className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-background/10 backdrop-blur-sm rounded-xl hover:bg-background/20 transition-colors"
                 >
-                  <Phone className="w-6 h-6" />
+                  <Phone className="w-5 h-5 md:w-6 md:h-6" />
                   <div>
-                    <p className="text-sm opacity-80">Ligue agora</p>
-                    <p className="font-display text-lg font-bold">(31) 99999-9999</p>
+                    <p className="text-xs md:text-sm opacity-80">Ligue agora</p>
+                    <p className="font-display text-base md:text-lg font-bold">(31) 98848-0488</p>
                   </div>
                 </a>
 
@@ -93,25 +93,25 @@ const BusinessHoursSection = () => {
                   href="https://www.google.com/maps/dir/?api=1&destination=Rua+Geraldo+Gervão+125+Manoel+Correa+Conselheiro+Lafaiete"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-background/10 backdrop-blur-sm rounded-xl hover:bg-background/20 transition-colors"
+                  className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-background/10 backdrop-blur-sm rounded-xl hover:bg-background/20 transition-colors"
                 >
-                  <MapPin className="w-6 h-6" />
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6" />
                   <div>
-                    <p className="text-sm opacity-80">Endereço</p>
-                    <p className="font-display font-bold">Rua Geraldo Gervão, 125</p>
-                    <p className="text-sm">Manoel Correa - Conselheiro Lafaiete</p>
+                    <p className="text-xs md:text-sm opacity-80">Endereço</p>
+                    <p className="font-display text-sm md:text-base font-bold">Rua Geraldo Gervão, 125</p>
+                    <p className="text-xs md:text-sm">Manoel Correa - Conselheiro Lafaiete</p>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div className="bg-secondary border border-border rounded-2xl p-6 text-center">
-              <p className="text-muted-foreground mb-2">Atendimento de emergência?</p>
+            <div className="bg-secondary border border-border rounded-2xl p-4 md:p-6 text-center">
+              <p className="text-sm md:text-base text-muted-foreground mb-2">Atendimento de emergência?</p>
               <a
-                href="https://wa.me/5531999999999?text=Olá! Preciso de atendimento urgente."
+                href="https://wa.me/5531988480488?text=Olá! Preciso de atendimento urgente."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary font-display font-bold text-lg hover:underline"
+                className="inline-flex items-center gap-2 text-primary font-display font-bold text-base md:text-lg hover:underline"
               >
                 Fale conosco pelo WhatsApp
               </a>

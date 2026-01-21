@@ -1,5 +1,6 @@
 import { Play, MapPin, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import logo from "@/assets/logo.png";
 
 const HeroSection = () => {
   return (
@@ -19,60 +20,60 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 pt-20">
         <div className="max-w-4xl mx-auto text-center animate-slide-up">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-6">
-            <MapPin className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Conselheiro Lafaiete - MG</span>
+          <div className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-primary/10 border border-primary/30 mb-4 md:mb-6">
+            <MapPin className="w-3 h-3 md:w-4 md:h-4 text-primary" />
+            <span className="text-xs md:text-sm text-muted-foreground">Conselheiro Lafaiete - MG</span>
           </div>
 
-          {/* Title */}
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-4">
-            <span className="text-foreground">AUTO PRIME</span>
-            <br />
-            <span className="text-gradient">SUSPENSÕES</span>
-          </h1>
+          {/* Logo */}
+          <img 
+            src={logo} 
+            alt="Auto Prime Suspensões" 
+            className="h-16 md:h-24 lg:h-32 w-auto mx-auto mb-4 md:mb-6"
+          />
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-8 px-2">
             Especialistas em suspensão automotiva. Qualidade, confiança e o melhor atendimento para o seu veículo.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
             <a
               href="#videos"
-              className="flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-display font-semibold text-lg hover:shadow-glow transition-all hover:scale-105"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-primary-foreground rounded-lg font-display font-semibold text-base md:text-lg hover:shadow-glow transition-all hover:scale-105"
             >
-              <Play className="w-5 h-5" />
+              <Play className="w-4 h-4 md:w-5 md:h-5" />
               Ver Trabalhos
             </a>
             <a
               href="#sobre"
-              className="px-8 py-4 border border-border text-foreground rounded-lg font-display font-semibold text-lg hover:bg-secondary transition-colors"
+              className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 border border-border text-foreground rounded-lg font-display font-semibold text-base md:text-lg hover:bg-secondary transition-colors text-center"
             >
               Conhecer a Oficina
             </a>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
+          <div className="grid grid-cols-3 gap-4 md:gap-8 mt-10 md:mt-16 max-w-2xl mx-auto">
             <div className="text-center">
-              <span className="block font-display text-3xl md:text-4xl font-bold text-primary">10+</span>
-              <span className="text-sm text-muted-foreground">Anos de Experiência</span>
+              <span className="block font-display text-2xl md:text-3xl lg:text-4xl font-bold text-primary">10+</span>
+              <span className="text-xs md:text-sm text-muted-foreground">Anos de Experiência</span>
             </div>
             <div className="text-center">
-              <span className="block font-display text-3xl md:text-4xl font-bold text-primary">5000+</span>
-              <span className="text-sm text-muted-foreground">Clientes Satisfeitos</span>
+              <span className="block font-display text-2xl md:text-3xl lg:text-4xl font-bold text-primary">5000+</span>
+              <span className="text-xs md:text-sm text-muted-foreground">Clientes Satisfeitos</span>
             </div>
             <div className="text-center">
-              <span className="block font-display text-3xl md:text-4xl font-bold text-primary">100%</span>
-              <span className="text-sm text-muted-foreground">Garantia de Serviço</span>
+              <span className="block font-display text-2xl md:text-3xl lg:text-4xl font-bold text-primary">100%</span>
+              <span className="text-xs md:text-sm text-muted-foreground">Garantia de Serviço</span>
             </div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-          <ChevronDown className="w-8 h-8 text-primary" />
+        <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 animate-float">
+          <ChevronDown className="w-6 h-6 md:w-8 md:h-8 text-primary" />
         </div>
       </div>
     </section>

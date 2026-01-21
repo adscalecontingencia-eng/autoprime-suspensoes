@@ -48,7 +48,7 @@ const ExitIntentPopup = () => {
     const message = encodeURIComponent(
       "Olá! Vi a oferta de 10% de desconto no site e gostaria de solicitar um orçamento."
     );
-    window.open(`https://wa.me/5511999999999?text=${message}`, "_blank");
+    window.open(`https://wa.me/5531988480488?text=${message}`, "_blank");
     setIsOpen(false);
   };
 
