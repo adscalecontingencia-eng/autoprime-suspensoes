@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Qual a garantia dos serviços realizados?",
-    answer: "Oferecemos garantia de 6 meses para mão de obra e seguimos a garantia do fabricante para as peças utilizadas, que geralmente varia de 1 a 2 anos dependendo da marca."
+    answer: "Oferecemos garantia de 3 meses para mão de obra e seguimos a garantia do fabricante para as peças utilizadas, que geralmente varia de 1 a 2 anos dependendo da marca."
   },
   {
     question: "É necessário agendar ou posso ir direto?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "Vocês fazem orçamento gratuito?",
-    answer: "Sim! Realizamos avaliação e orçamento gratuito. Basta trazer seu veículo ou entrar em contato pelo WhatsApp informando o modelo e os sintomas apresentados."
+    answer: "Sim! O orçamento de peças é gratuito. Basta trazer seu veículo ou entrar em contato pelo WhatsApp informando o modelo e os sintomas apresentados. Porém, para diagnóstico detalhado do veículo, cobramos a mão de obra do serviço."
   },
   {
     question: "Quais formas de pagamento vocês aceitam?",

@@ -9,13 +9,13 @@ const ServicesSection = () => {
     },
     {
       icon: CircleDot,
-      title: "Molas e Coxins",
-      description: "Troca de molas, coxins e batentes para melhor conforto e estabilidade.",
+      title: "Buchas de Suspensão",
+      description: "Troca de buchas, coxins e batentes para melhor conforto e estabilidade.",
     },
     {
       icon: Cog,
       title: "Manutenção na Direção",
-      description: "Reparo e troca de componentes da caixa de direção hidráulica e elétrica.",
+      description: "Reparo e troca de componentes da caixa de direção hidráulica.",
     },
     {
       icon: Zap,
