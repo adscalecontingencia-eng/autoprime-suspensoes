@@ -3,7 +3,8 @@ import { X, ZoomIn } from "lucide-react";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<null | {
@@ -15,7 +16,7 @@ const GallerySection = () => {
   const gallery = [
     {
       src: gallery1,
-      title: "Troca de Amortecedor - Antes e Depois",
+      title: "Troca de Amortecedor",
       description: "Substituição completa do conjunto de amortecedores. Peças originais garantem melhor desempenho, estabilidade nas curvas e maior conforto ao rodar. Trabalhamos com as melhores marcas do mercado.",
     },
     {
@@ -29,9 +30,14 @@ const GallerySection = () => {
       description: "Troca de molas espirais, coxins e batentes de suspensão. Esses componentes são essenciais para absorver impactos e manter o conforto do veículo. Usamos peças de alta durabilidade.",
     },
     {
-      src: gallery4,
-      title: "Diagnóstico de Geometria",
-      description: "Análise computadorizada da geometria da suspensão. Identificamos problemas de alinhamento, desgaste irregular de pneus e instabilidade na direção. Laudo técnico completo incluso.",
+      src: gallery5,
+      title: "Revisão da Suspensão Completa",
+      description: "Análise completa de todos os componentes da suspensão do veículo. Verificamos amortecedores, molas, coxins, buchas, bandejas e pivôs. Garantimos o diagnóstico preciso e orçamento detalhado.",
+    },
+    {
+      src: gallery6,
+      title: "Recuperação de Amortecedor",
+      description: "Serviço especializado de recuperação e recondicionamento de amortecedores. Trocamos retentores, válvulas e óleo, devolvendo a eficiência original da peça. Economia com qualidade garantida.",
     },
   ];
 
@@ -41,10 +47,10 @@ const GallerySection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-3 md:mb-4">
-            NOSSOS TRABALHOS
+            GALERIA
           </span>
           <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
-            ANTES E <span className="text-gradient">DEPOIS</span>
+            NOSSOS <span className="text-gradient">TRABALHOS</span>
           </h2>
           <p className="text-muted-foreground text-sm md:text-lg">
             Confira alguns dos nossos trabalhos e veja a qualidade do serviço que oferecemos. Clique nas imagens para mais detalhes.
@@ -52,7 +58,7 @@ const GallerySection = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {gallery.map((item, index) => (
             <div
               key={index}

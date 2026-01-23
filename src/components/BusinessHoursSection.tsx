@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Clock, Phone, MapPin } from "lucide-react";
 
 const hours = [
-  { day: "Segunda-feira", time: "08:00 - 18:00", isOpen: true },
-  { day: "Terça-feira", time: "08:00 - 18:00", isOpen: true },
-  { day: "Quarta-feira", time: "08:00 - 18:00", isOpen: true },
-  { day: "Quinta-feira", time: "08:00 - 18:00", isOpen: true },
-  { day: "Sexta-feira", time: "08:00 - 18:00", isOpen: true },
-  { day: "Sábado", time: "08:00 - 12:00", isOpen: true },
+  { day: "Segunda-feira", time: "08:00 - 17:30", isOpen: true },
+  { day: "Terça-feira", time: "08:00 - 17:30", isOpen: true },
+  { day: "Quarta-feira", time: "08:00 - 17:30", isOpen: true },
+  { day: "Quinta-feira", time: "08:00 - 17:30", isOpen: true },
+  { day: "Sexta-feira", time: "08:00 - 17:30", isOpen: true },
+  { day: "Sábado", time: "Fechado", isOpen: false },
   { day: "Domingo", time: "Fechado", isOpen: false },
 ];
 
