@@ -18,9 +18,9 @@ const TestimonialsSection = () => {
     },
     {
       name: "José Roberto",
-      role: "VW Fusca 1972",
+      role: "Chevrolet Celta 2014",
       rating: 5,
-      text: "Tenho um Fusca antigo e eles souberam exatamente o que fazer. Encontraram as peças certas e o carro ficou como novo. Profissionais de verdade!",
+      text: "Levei meu Celta para trocar os amortecedores e ficou excelente. Encontraram as peças certas e o carro ficou como novo. Profissionais de verdade!",
       initials: "JR",
     },
     {
