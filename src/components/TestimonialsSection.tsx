@@ -47,57 +47,57 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-12 md:py-20 lg:py-32 bg-background">
+    <section id="depoimentos" className="py-10 md:py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
-          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-3 md:mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-6 md:mb-16">
+          <span className="inline-block text-primary font-display font-semibold text-xs md:text-sm tracking-wider mb-2 md:mb-4">
             CLIENTES SATISFEITOS
           </span>
-          <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
+          <h2 className="font-display text-xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-6">
             O QUE NOSSOS <span className="text-gradient">CLIENTES</span> DIZEM
           </h2>
-          <p className="text-muted-foreground text-sm md:text-lg">
+          <p className="text-muted-foreground text-xs md:text-lg px-2">
             A satisfação dos nossos clientes é o que nos motiva a continuar oferecendo o melhor serviço.
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+        {/* Testimonials Grid - 1 column on mobile, 2 on desktop */}
+        <div className="grid md:grid-cols-2 gap-3 md:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative p-5 md:p-6 lg:p-8 rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all duration-300 shadow-card"
+              className="relative p-4 md:p-6 lg:p-8 rounded-xl md:rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all duration-300 shadow-card"
             >
-              {/* Quote Icon */}
-              <div className="absolute top-6 right-6 opacity-20">
-                <Quote className="w-10 h-10 text-primary" />
+              {/* Quote Icon - smaller on mobile */}
+              <div className="absolute top-4 right-4 md:top-6 md:right-6 opacity-20">
+                <Quote className="w-6 h-6 md:w-10 md:h-10 text-primary" />
               </div>
 
               {/* Stars */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-0.5 md:gap-1 mb-3 md:mb-4">
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                  <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-primary text-primary" />
                 ))}
               </div>
 
               {/* Text */}
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4 md:mb-6">
+              <p className="text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-3 md:mb-6 line-clamp-3 md:line-clamp-none">
                 "{testimonial.text}"
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                  <span className="font-display font-bold text-primary">
+              <div className="flex items-center gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                  <span className="font-display font-bold text-primary text-sm md:text-base">
                     {testimonial.initials}
                   </span>
                 </div>
                 <div>
-                  <p className="font-display font-semibold text-foreground">
+                  <p className="font-display font-semibold text-foreground text-sm md:text-base">
                     {testimonial.name}
                   </p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs md:text-sm text-muted-foreground">
                     {testimonial.role}
                   </p>
                 </div>
