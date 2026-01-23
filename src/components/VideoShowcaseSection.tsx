@@ -55,8 +55,7 @@ const VideoShowcaseSection = () => {
               onPause={() => setIsPlaying(false)}
               controls={isPlaying}
             >
-              <source src="/videos/apresentacao.mov" type="video/quicktime" />
-              <source src="/videos/apresentacao.mov" type="video/mp4" />
+              <source src="/videos/apresentacao.mp4" type="video/mp4" />
               Seu navegador não suporta vídeos HTML5.
             </video>
 
