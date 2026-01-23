@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-3 md:mb-4">
-            DEPOIMENTOS
+            CLIENTES SATISFEITOS
           </span>
           <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
             O QUE NOSSOS <span className="text-gradient">CLIENTES</span> DIZEM
