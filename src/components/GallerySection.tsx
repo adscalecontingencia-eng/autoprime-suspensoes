@@ -42,28 +42,28 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="galeria" className="py-12 md:py-20 lg:py-32 bg-hero-gradient">
+    <section id="galeria" className="py-10 md:py-20 lg:py-32 bg-hero-gradient">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
-          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-3 md:mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-6 md:mb-16">
+          <span className="inline-block text-primary font-display font-semibold text-xs md:text-sm tracking-wider mb-2 md:mb-4">
             GALERIA
           </span>
-          <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
+          <h2 className="font-display text-xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-6">
             NOSSOS <span className="text-gradient">TRABALHOS</span>
           </h2>
-          <p className="text-muted-foreground text-sm md:text-lg">
-            Confira alguns dos nossos trabalhos e veja a qualidade do serviço que oferecemos. Clique nas imagens para mais detalhes.
+          <p className="text-muted-foreground text-xs md:text-lg px-2">
+            Confira alguns dos nossos trabalhos e veja a qualidade do serviço que oferecemos.
           </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Gallery Grid - 2 columns on mobile, 3 on desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-8">
           {gallery.map((item, index) => (
             <div
               key={index}
               onClick={() => setSelectedImage(item)}
-              className="group relative aspect-video rounded-2xl bg-card-gradient border border-border overflow-hidden shadow-card hover:border-primary/50 transition-all cursor-pointer"
+              className="group relative aspect-video rounded-xl md:rounded-2xl bg-card-gradient border border-border overflow-hidden shadow-card hover:border-primary/50 transition-all cursor-pointer"
             >
               <img
                 src={item.src}
@@ -74,17 +74,17 @@ const GallerySection = () => {
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
               
-              {/* Zoom Icon */}
-              <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              {/* Zoom Icon - hidden on mobile */}
+              <div className="hidden md:flex absolute top-4 right-4 w-10 h-10 rounded-full bg-primary/20 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <ZoomIn className="w-5 h-5 text-primary" />
               </div>
               
               {/* Info Overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="font-display text-lg font-semibold text-foreground mb-1">
+              <div className="absolute bottom-0 left-0 right-0 p-3 md:p-6">
+                <h3 className="font-display text-xs md:text-lg font-semibold text-foreground mb-0 md:mb-1 leading-tight">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted-foreground line-clamp-2">
+                <p className="text-[10px] md:text-sm text-muted-foreground hidden md:block">
                   Clique para ver detalhes
                 </p>
               </div>
@@ -100,15 +100,15 @@ const GallerySection = () => {
           onClick={() => setSelectedImage(null)}
         >
           <div
-            className="relative max-w-4xl w-full bg-card-gradient rounded-2xl border border-border shadow-2xl overflow-hidden"
+            className="relative max-w-4xl w-full bg-card-gradient rounded-xl md:rounded-2xl border border-border shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-background/80 flex items-center justify-center hover:bg-primary/20 transition-colors"
+              className="absolute top-3 right-3 md:top-4 md:right-4 z-10 w-8 h-8 md:w-10 md:h-10 rounded-full bg-background/80 flex items-center justify-center hover:bg-primary/20 transition-colors"
             >
-              <X className="w-5 h-5 text-foreground" />
+              <X className="w-4 h-4 md:w-5 md:h-5 text-foreground" />
             </button>
 
             {/* Image */}
@@ -121,18 +121,18 @@ const GallerySection = () => {
             </div>
 
             {/* Content */}
-            <div className="p-6 lg:p-8">
-              <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+            <div className="p-4 md:p-6 lg:p-8">
+              <h3 className="font-display text-lg md:text-2xl font-bold text-foreground mb-2 md:mb-4">
                 {selectedImage.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 {selectedImage.description}
               </p>
               <a
                 href="https://wa.me/5531988480488?text=Olá! Gostaria de saber mais sobre esse serviço."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-display font-semibold hover:shadow-glow transition-all"
+                className="inline-flex items-center gap-2 mt-4 md:mt-6 px-5 md:px-6 py-2.5 md:py-3 bg-primary text-primary-foreground rounded-lg font-display font-semibold text-sm md:text-base hover:shadow-glow transition-all"
               >
                 Solicitar Orçamento
               </a>

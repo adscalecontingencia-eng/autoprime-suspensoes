@@ -1,4 +1,4 @@
-import { Settings, Car, Gauge, CircleDot, Layers, Zap, Cog } from "lucide-react";
+import { Settings, CircleDot, Cog, Zap } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -18,21 +18,6 @@ const ServicesSection = () => {
       description: "Reparo e troca de componentes da caixa de direção hidráulica e elétrica.",
     },
     {
-      icon: Gauge,
-      title: "Alinhamento",
-      description: "Alinhamento de direção computadorizado para maior segurança.",
-    },
-    {
-      icon: Layers,
-      title: "Balanceamento",
-      description: "Balanceamento de rodas para eliminar vibrações e desgaste irregular.",
-    },
-    {
-      icon: Car,
-      title: "Geometria Completa",
-      description: "Análise e correção completa da geometria de suspensão.",
-    },
-    {
       icon: Zap,
       title: "Reparo em Amortecedores",
       description: "Recuperação e manutenção de amortecedores com qualidade garantida.",
@@ -40,35 +25,35 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicos" className="py-12 md:py-20 lg:py-32 bg-background">
+    <section id="servicos" className="py-10 md:py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
-          <span className="inline-block text-primary font-display font-semibold text-sm tracking-wider mb-3 md:mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-6 md:mb-16">
+          <span className="inline-block text-primary font-display font-semibold text-xs md:text-sm tracking-wider mb-2 md:mb-4">
             NOSSOS SERVIÇOS
           </span>
-          <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
+          <h2 className="font-display text-xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 md:mb-6">
             ESPECIALISTAS EM <span className="text-gradient">SUSPENSÃO</span>
           </h2>
-          <p className="text-muted-foreground text-sm md:text-lg">
+          <p className="text-muted-foreground text-xs md:text-lg px-2">
             Oferecemos uma gama completa de serviços para manter seu veículo com o máximo de segurança e conforto.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        {/* Services Grid - 2 columns on mobile */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-4 md:p-6 rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all duration-300 shadow-card hover:shadow-glow"
+              className="group p-3 md:p-6 rounded-xl md:rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all duration-300 shadow-card hover:shadow-glow"
             >
-              <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 md:mb-6 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-6 h-6 md:w-7 md:h-7 text-primary" />
+              <div className="w-10 h-10 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-6 group-hover:bg-primary/20 transition-colors">
+                <service.icon className="w-5 h-5 md:w-7 md:h-7 text-primary" />
               </div>
-              <h3 className="font-display text-lg md:text-xl font-semibold text-foreground mb-2 md:mb-3">
+              <h3 className="font-display text-sm md:text-xl font-semibold text-foreground mb-1 md:mb-3 leading-tight">
                 {service.title}
               </h3>
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+              <p className="text-xs md:text-base text-muted-foreground leading-relaxed hidden md:block">
                 {service.description}
               </p>
             </div>
@@ -76,12 +61,12 @@ const ServicesSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-8 md:mt-12">
+        <div className="text-center mt-6 md:mt-12">
           <a
             href="https://wa.me/5531988480488?text=Olá! Gostaria de agendar um serviço."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-primary-foreground rounded-lg font-display font-semibold text-base md:text-lg hover:shadow-glow transition-all hover:scale-105"
+            className="inline-flex items-center gap-2 px-5 md:px-8 py-2.5 md:py-4 bg-primary text-primary-foreground rounded-lg font-display font-semibold text-sm md:text-lg hover:shadow-glow transition-all hover:scale-105"
           >
             Agendar Serviço
           </a>
