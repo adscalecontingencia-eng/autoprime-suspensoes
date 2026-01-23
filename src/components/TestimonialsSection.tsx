@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
       name: "Luciana Santos",
       role: "Toyota Corolla 2022",
       rating: 5,
-      text: "Atendimento nota 10! Fizeram o alinhamento e balanceamento do meu carro rapidamente. A diferença foi incrível. Super recomendo!",
+      text: "Atendimento nota 10! Fizeram a recuperação do amortecedor do meu carro rapidamente. A diferença foi incrível. Super recomendo!",
       initials: "LS",
     },
   ];
