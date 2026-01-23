@@ -22,12 +22,12 @@ const GallerySection = () => {
     {
       src: gallery2,
       title: "Manutenção na Direção",
-      description: "Serviço especializado em caixa de direção hidráulica e elétrica. Realizamos troca de terminais, barra de direção, caixa de direção e todo o sistema. Garantia de fábrica em todas as peças.",
+      description: "Serviço especializado em caixa de direção hidráulica. Realizamos troca de terminais, barra de direção, caixa de direção e todo o sistema. Garantia de fábrica em todas as peças.",
     },
     {
       src: gallery3,
-      title: "Revisão de Molas e Coxins",
-      description: "Troca de molas espirais, coxins e batentes de suspensão. Esses componentes são essenciais para absorver impactos e manter o conforto do veículo. Usamos peças de alta durabilidade.",
+      title: "Revisão de Buchas da Suspensão e Coxins",
+      description: "Troca de buchas, coxins e batentes de suspensão. Esses componentes são essenciais para absorver impactos e manter o conforto do veículo. Usamos peças de alta durabilidade.",
     },
     {
       src: gallery5,

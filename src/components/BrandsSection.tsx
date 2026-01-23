@@ -6,7 +6,6 @@ const brands = [
   { name: "Cofap" },
   { name: "Nakata" },
   { name: "Axios" },
-  { name: "Sampel" },
   { name: "Viemar" },
 ];
 
