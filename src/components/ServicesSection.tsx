@@ -45,17 +45,19 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-3 md:p-6 rounded-xl md:rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all duration-300 shadow-card hover:shadow-glow"
+              className="group flex items-center gap-4 p-4 md:p-6 md:flex-col md:items-start rounded-xl md:rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all duration-300 shadow-card hover:shadow-glow"
             >
-              <div className="w-10 h-10 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-6 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-5 h-5 md:w-7 md:h-7 text-primary" />
+              <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-lg md:rounded-xl bg-primary/10 flex items-center justify-center md:mb-6 group-hover:bg-primary/20 transition-colors">
+                <service.icon className="w-6 h-6 md:w-7 md:h-7 text-primary" />
               </div>
-              <h3 className="font-display text-sm md:text-xl font-semibold text-foreground mb-1 md:mb-3 leading-tight">
-                {service.title}
-              </h3>
-              <p className="text-xs md:text-base text-muted-foreground leading-relaxed hidden md:block">
-                {service.description}
-              </p>
+              <div className="flex-1">
+                <h3 className="font-display text-base md:text-xl font-semibold text-foreground mb-1 md:mb-3 leading-tight">
+                  {service.title}
+                </h3>
+                <p className="text-xs md:text-base text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

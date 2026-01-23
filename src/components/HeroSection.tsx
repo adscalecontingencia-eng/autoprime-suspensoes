@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-[100svh] flex items-center justify-center overflow-hidden"
+      className="relative min-h-[100svh] flex items-start md:items-center justify-center overflow-hidden pt-20 md:pt-0"
     >
       {/* Background Image */}
       <div
