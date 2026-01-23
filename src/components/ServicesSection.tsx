@@ -40,8 +40,8 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Services Grid - 2 columns on mobile */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
+        {/* Services Grid - 1 column on mobile, 4 on desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 md:gap-6">
           {services.map((service, index) => (
             <div
               key={index}

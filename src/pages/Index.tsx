@@ -13,7 +13,6 @@ import FAQSection from "@/components/FAQSection";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const Index = () => {
   return (
@@ -34,7 +33,6 @@ const Index = () => {
       </main>
       <Footer />
       <WhatsAppButton />
-      <ExitIntentPopup />
     </div>
   );
 };
