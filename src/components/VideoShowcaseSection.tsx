@@ -41,9 +41,9 @@ const VideoShowcaseSection = () => {
         </div>
 
         {/* Large Video Player */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-sm md:max-w-5xl mx-auto">
           <div 
-            className="relative aspect-video rounded-2xl md:rounded-3xl bg-card-gradient border border-border overflow-hidden shadow-2xl cursor-pointer group"
+            className="relative aspect-[9/16] md:aspect-video rounded-2xl md:rounded-3xl bg-card-gradient border border-border overflow-hidden shadow-2xl cursor-pointer group"
             onClick={handleVideoClick}
           >
             <video
