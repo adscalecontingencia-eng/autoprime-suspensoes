@@ -33,9 +33,6 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          # Ensure assets resolve correctly under the GitHub Pages subpath
-          BASE_PATH: "/autoprime-suspensoes/"
 
       - name: Add SPA fallback (404.html)
         run: cp dist/index.html dist/404.html
