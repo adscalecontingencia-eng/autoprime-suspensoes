@@ -6,40 +6,75 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect } from "react";
 
+const SITE_URL = "https://autoprime-suspensoes.lovable.app";
+const LOGO_URL = `${SITE_URL}/favicon.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
+
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find((p) => p.slug === slug);
 
   useEffect(() => {
-    if (post) {
-      document.title = `${post.title} | Auto Prime Suspensões`;
-      const meta = document.querySelector('meta[name="description"]');
-      if (meta) meta.setAttribute("content", post.description);
+    if (!post) return;
+
+    document.title = `${post.title} | Auto Prime Suspensões`;
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", post.description);
+
+    const postUrl = `${SITE_URL}/blog/${post.slug}`;
+    const articleSchema = {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.description,
+      image: [DEFAULT_IMAGE],
+      datePublished: post.date,
+      dateModified: post.date,
+      author: {
+        "@type": "Organization",
+        name: "Auto Prime Suspensões",
+        url: SITE_URL,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Auto Prime Suspensões",
+        logo: { "@type": "ImageObject", url: LOGO_URL },
+      },
+      mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
+      url: postUrl,
+      articleSection: post.category,
+      inLanguage: "pt-BR",
+      keywords: [
+        post.category,
+        "amortecedor",
+        "suspensão",
+        "Conselheiro Lafaiete",
+        "MG",
+        "oficina",
+      ].join(", "),
+    };
+
+    const scriptId = "blog-post-jsonld";
+    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = scriptId;
+      document.head.appendChild(script);
     }
+    script.text = JSON.stringify(articleSchema);
+
+    return () => {
+      const existing = document.getElementById(scriptId);
+      if (existing) existing.remove();
+    };
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    author: { "@type": "Organization", name: "Auto Prime Suspensões" },
-    publisher: {
-      "@type": "Organization",
-      name: "Auto Prime Suspensões",
-    },
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <main className="pt-20 md:pt-28 pb-10 md:pb-16">
         <article className="container mx-auto px-4 max-w-3xl">
           <Link
