@@ -6,7 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect } from "react";
 
-const SITE_URL = "https://autoprime-suspensoes.lovable.app";
+const SITE_URL = "https://www.autoprimesuspensoes.com.br";
 const LOGO_URL = `${SITE_URL}/favicon.png`;
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 

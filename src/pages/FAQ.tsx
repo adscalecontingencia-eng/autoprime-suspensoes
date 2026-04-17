@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const SITE_URL = "https://autoprime-suspensoes.lovable.app";
+const SITE_URL = "https://www.autoprimesuspensoes.com.br";
 
 const faqs = [
   {
