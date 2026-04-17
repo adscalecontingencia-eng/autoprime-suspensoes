@@ -11,6 +11,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://autoprime-suspensoes.lovable.app/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://autoprime-suspensoes.lovable.app/blog/problemas-amortecedores</loc>
     <priority>0.8</priority>
   </url>
