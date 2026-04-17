@@ -1,19 +1,22 @@
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+  const prefix = isHome ? "" : "/";
 
   const navLinks = [
-    { href: "#inicio", label: "Início" },
-    { href: "#videos", label: "Vídeo" },
-    { href: "#sobre", label: "Sobre" },
-    { href: "#servicos", label: "Serviços" },
-    { href: "#galeria", label: "Trabalhos" },
-    { href: "#depoimentos", label: "Depoimentos" },
-    { href: "#orcamento", label: "Orçamento" },
-    { href: "#faq", label: "FAQ" },
-    { href: "#localizacao", label: "Localização" },
+    { href: `${prefix}#inicio`, label: "Início" },
+    { href: `${prefix}#servicos`, label: "Serviços" },
+    { href: `${prefix}#galeria`, label: "Trabalhos" },
+    { href: `${prefix}#depoimentos`, label: "Depoimentos" },
+    { href: `${prefix}#orcamento`, label: "Orçamento" },
+    { href: "/blog", label: "Blog", isRoute: true },
+    { href: `${prefix}#faq`, label: "FAQ" },
+    { href: `${prefix}#localizacao`, label: "Localização" },
   ];
 
   return (
