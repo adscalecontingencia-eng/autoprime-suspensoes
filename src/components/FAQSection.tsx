@@ -8,6 +8,22 @@ import {
 
 const faqs = [
   {
+    question: "Quanto custa trocar amortecedor em Conselheiro Lafaiete?",
+    answer: "O preço da troca de amortecedor em Lafaiete MG varia conforme o modelo do veículo e a marca da peça escolhida. Trabalhamos com peças originais e paralelas de qualidade, sempre com orçamento prévio gratuito. Envie o modelo do seu carro pelo WhatsApp (31) 98848-0488 e receba uma estimativa rápida."
+  },
+  {
+    question: "Quais são os sinais de amortecedor ruim?",
+    answer: "Os principais sintomas são: carro batendo seco em buracos, balanço excessivo após lombadas, instabilidade em curvas, pneus com desgaste irregular, vazamento de óleo no amortecedor e barulhos metálicos. Ao notar qualquer um destes sinais, agende um diagnóstico imediatamente."
+  },
+  {
+    question: "Quando devo trocar a suspensão do carro?",
+    answer: "Em geral, recomenda-se uma revisão da suspensão a cada 20.000 km e a troca de amortecedores entre 50.000 e 80.000 km, dependendo do uso e das condições das vias. Quem roda muito em estradas esburacadas pode precisar trocar antes."
+  },
+  {
+    question: "A oficina atende emergência ou casos urgentes?",
+    answer: "Sim! Atendemos casos urgentes durante o horário comercial em Conselheiro Lafaiete. Entre em contato pelo WhatsApp (31) 98848-0488 e priorizamos seu atendimento sempre que possível."
+  },
+  {
     question: "Quanto tempo demora uma revisão de suspensão?",
     answer: "O tempo varia de acordo com o serviço necessário. Uma revisão simples pode levar de 1 a 2 horas, enquanto uma troca completa de componentes pode levar de 3 a 4 horas. Sempre realizamos uma avaliação prévia para informar o tempo estimado."
   },
