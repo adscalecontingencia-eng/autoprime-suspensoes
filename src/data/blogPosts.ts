@@ -11,6 +11,97 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "problemas-amortecedores",
+    title: "Problemas nos Amortecedores: Guia Completo para Identificar e Resolver",
+    description:
+      "Guia definitivo sobre problemas de amortecedores: causas, sintomas, riscos, diagnóstico e soluções. Oficina especializada em Conselheiro Lafaiete MG.",
+    date: "2025-02-01",
+    readTime: "10 min",
+    category: "Guia Completo",
+    excerpt:
+      "Tudo que você precisa saber sobre problemas nos amortecedores: como identificar, principais causas, riscos e o que fazer para resolver com segurança.",
+    content: `
+<p>Os amortecedores são responsáveis por absorver impactos, manter os pneus em contato com o solo e garantir a estabilidade do veículo. Quando apresentam defeito, comprometem diretamente a <strong>segurança, o conforto e a dirigibilidade</strong>. Neste guia completo você vai entender tudo sobre problemas em amortecedores.</p>
+
+<h2>O que faz o amortecedor?</h2>
+<p>O amortecedor controla o movimento das molas da suspensão, evitando que o carro fique balançando após cada irregularidade da pista. Sem ele, o veículo perde aderência, a frenagem aumenta e o desgaste de outros componentes acelera.</p>
+
+<h2>Principais causas de problemas nos amortecedores</h2>
+<ul>
+  <li><strong>Desgaste natural:</strong> a vida útil média é de 60 mil a 80 mil km.</li>
+  <li><strong>Buracos e lombadas em alta velocidade:</strong> impactos fortes danificam vedações e hastes.</li>
+  <li><strong>Sobrecarga do veículo:</strong> excesso de peso força o sistema constantemente.</li>
+  <li><strong>Vazamento de óleo:</strong> compromete a função hidráulica do componente.</li>
+  <li><strong>Corrosão e ferrugem:</strong> comuns em regiões úmidas ou após enchentes.</li>
+</ul>
+
+<h2>Como identificar problemas no amortecedor</h2>
+
+<h3>1. Carro "afundando" em buracos</h3>
+<p>Impacto seco na carroceria ao passar por irregularidades indica perda da capacidade de absorção.</p>
+
+<h3>2. Balanço prolongado</h3>
+<p>Após uma lombada, o carro deve estabilizar em até 2 movimentos. Se balança mais, há desgaste.</p>
+
+<h3>3. Frenagem alongada</h3>
+<p>Amortecedor ruim aumenta a distância de frenagem em até 20%, especialmente em piso molhado.</p>
+
+<h3>4. Pneus com desgaste irregular</h3>
+<p>Manchas escamadas (efeito "cupping") são sinais clássicos de suspensão comprometida.</p>
+
+<h3>5. Carro "puxando" para um lado</h3>
+<p>Pode indicar amortecedor desigual entre os lados ou problema na geometria associada.</p>
+
+<h3>6. Ruídos metálicos ao passar em buracos</h3>
+<p>Batidas, estalos ou rangidos indicam folgas internas ou batentes danificados.</p>
+
+<h3>7. Vazamento visível de óleo</h3>
+<p>Inspecione a haste do amortecedor: se houver óleo escorrendo, troque imediatamente.</p>
+
+<h2>Riscos de rodar com amortecedor ruim</h2>
+<ul>
+  <li>Aumento da distância de frenagem.</li>
+  <li>Perda de aderência em curvas e piso molhado.</li>
+  <li>Risco de aquaplanagem.</li>
+  <li>Desgaste prematuro de pneus, pivôs, bandejas e rolamentos.</li>
+  <li>Comprometimento do sistema de direção hidráulica.</li>
+  <li>Maior risco de capotamento em manobras bruscas.</li>
+</ul>
+
+<h2>Como é feito o diagnóstico</h2>
+<p>Em uma <strong>oficina especializada em suspensão</strong>, o diagnóstico envolve:</p>
+<ol>
+  <li>Inspeção visual de hastes, coxins, batentes e molas.</li>
+  <li>Teste de balanço (compressão manual em cada canto do veículo).</li>
+  <li>Test drive para identificar ruídos e instabilidade.</li>
+  <li>Verificação de pneus, pivôs e bandejas associadas.</li>
+</ol>
+
+<h2>O que fazer quando identificar o problema</h2>
+<p>A regra de ouro é: <strong>nunca rode com amortecedor comprometido</strong>. Procure uma oficina especializada o quanto antes. Em Conselheiro Lafaiete MG, a Auto Prime Suspensões oferece:</p>
+<ul>
+  <li>Diagnóstico honesto e gratuito.</li>
+  <li>Mão de obra especializada em suspensão e direção hidráulica.</li>
+  <li>Peças de marcas reconhecidas (Cofap, Monroe, Nakata).</li>
+  <li>Garantia em peças e serviços.</li>
+</ul>
+
+<h2>Trocar em par ou individualmente?</h2>
+<p>O ideal é <strong>trocar sempre em par</strong> (dianteiros ou traseiros juntos) para manter o equilíbrio do veículo. Trocar apenas um lado pode causar comportamento desigual e desgaste acelerado do componente novo.</p>
+
+<h2>Manutenção preventiva</h2>
+<ul>
+  <li>Evite buracos em alta velocidade.</li>
+  <li>Não sobrecarregue o veículo.</li>
+  <li>Faça revisão da suspensão a cada 20 mil km.</li>
+  <li>Mantenha pneus calibrados e geometria em dia.</li>
+</ul>
+
+<h2>Fale com especialistas em Conselheiro Lafaiete</h2>
+<p>Se identificou qualquer um desses sinais, não espere o problema piorar. <a href="/#orcamento">Solicite um orçamento sem compromisso</a> ou chame no WhatsApp para um diagnóstico rápido na Auto Prime Suspensões.</p>
+    `,
+  },
+  {
     slug: "5-sinais-de-que-seu-amortecedor-esta-ruim",
     title: "5 Sinais de que Seu Amortecedor Está Ruim",
     description:
