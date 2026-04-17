@@ -2,10 +2,12 @@ import Header from "@/components/Header";
 import PromoBanner from "@/components/PromoBanner";
 import HeroSection from "@/components/HeroSection";
 import VideoShowcaseSection from "@/components/VideoShowcaseSection";
-import AboutSection from "@/components/AboutSection";
+import ProblemsSection from "@/components/ProblemsSection";
 import ServicesSection from "@/components/ServicesSection";
+import DifferentialsSection from "@/components/DifferentialsSection";
 import GallerySection from "@/components/GallerySection";
 import BrandsSection from "@/components/BrandsSection";
+import LocalSeoSection from "@/components/LocalSeoSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import BusinessHoursSection from "@/components/BusinessHoursSection";
@@ -21,10 +23,13 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <ProblemsSection />
         <VideoShowcaseSection />
         <ServicesSection />
+        <DifferentialsSection />
         <GallerySection />
         <BrandsSection />
+        <LocalSeoSection />
         <TestimonialsSection />
         <QuoteFormSection />
         <BusinessHoursSection />
