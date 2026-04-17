@@ -25,32 +25,39 @@ const HeroSection = () => {
             <span className="text-[10px] md:text-sm text-muted-foreground">Conselheiro Lafaiete - MG</span>
           </div>
 
-          {/* Logo - Much larger on mobile */}
+          {/* Logo */}
           <img 
             src={logo} 
-            alt="Auto Prime Suspensões" 
+            alt="Auto Prime Suspensões - Oficina de amortecedores em Conselheiro Lafaiete MG" 
             className="h-24 md:h-24 lg:h-32 w-auto mx-auto mb-3 md:mb-6"
           />
 
-          {/* Subtitle - More compact on mobile */}
+          {/* H1 SEO */}
+          <h1 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2 md:mb-4 leading-tight">
+            Oficina Especializada em <span className="text-gradient">Suspensão e Amortecedores</span> em Conselheiro Lafaiete MG
+          </h1>
+
+          {/* Subtitle */}
           <p className="text-sm md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 md:mb-8 px-1 leading-tight md:leading-normal">
-            Especialistas em suspensão automotiva. Qualidade e confiança para seu veículo.
+            Diagnóstico rápido, garantia no serviço e atendimento especializado para o seu carro. Solicite seu orçamento agora pelo WhatsApp.
           </p>
 
           {/* CTA Buttons - More compact on mobile */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-4">
             <a
-              href="#videos"
+              href="https://wa.me/5531988480488?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20servi%C3%A7o%20de%20suspens%C3%A3o."
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 md:px-8 py-2.5 md:py-4 bg-primary text-primary-foreground rounded-lg font-display font-semibold text-sm md:text-lg hover:shadow-glow transition-all hover:scale-105"
             >
               <Play className="w-4 h-4 md:w-5 md:h-5" />
-              Ver Trabalhos
+              Agendar pelo WhatsApp
             </a>
             <a
-              href="#sobre"
+              href="#orcamento"
               className="w-full sm:w-auto px-5 md:px-8 py-2.5 md:py-4 border border-border text-foreground rounded-lg font-display font-semibold text-sm md:text-lg hover:bg-secondary transition-colors text-center"
             >
-              Conhecer a Oficina
+              Solicitar Orçamento
             </a>
           </div>
 

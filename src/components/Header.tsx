@@ -1,19 +1,22 @@
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+  const prefix = isHome ? "" : "/";
 
   const navLinks = [
-    { href: "#inicio", label: "Início" },
-    { href: "#videos", label: "Vídeo" },
-    { href: "#sobre", label: "Sobre" },
-    { href: "#servicos", label: "Serviços" },
-    { href: "#galeria", label: "Trabalhos" },
-    { href: "#depoimentos", label: "Depoimentos" },
-    { href: "#orcamento", label: "Orçamento" },
-    { href: "#faq", label: "FAQ" },
-    { href: "#localizacao", label: "Localização" },
+    { href: `${prefix}#inicio`, label: "Início" },
+    { href: `${prefix}#servicos`, label: "Serviços" },
+    { href: `${prefix}#galeria`, label: "Trabalhos" },
+    { href: `${prefix}#depoimentos`, label: "Depoimentos" },
+    { href: `${prefix}#orcamento`, label: "Orçamento" },
+    { href: "/blog", label: "Blog", isRoute: true },
+    { href: `${prefix}#faq`, label: "FAQ" },
+    { href: `${prefix}#localizacao`, label: "Localização" },
   ];
 
   return (
@@ -29,15 +32,25 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isRoute ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
           </nav>
 
           {/* CTA Button */}
@@ -65,16 +78,27 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border animate-fade-in">
             <nav className="flex flex-col gap-3">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-base font-medium text-muted-foreground hover:text-primary transition-colors py-2"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.isRoute ? (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-base font-medium text-muted-foreground hover:text-primary transition-colors py-2"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-base font-medium text-muted-foreground hover:text-primary transition-colors py-2"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <a
                 href="tel:+5531988480488"
                 className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-primary-foreground rounded-lg font-medium mt-2"
