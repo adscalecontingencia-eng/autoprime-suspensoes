@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -43,6 +44,7 @@ const Footer = () => {
               <a href="#sobre" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Sobre</a>
               <a href="#servicos" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Serviços</a>
               <a href="#galeria" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Trabalhos</a>
+              <Link to="/blog" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Blog</Link>
               <a href="#localizacao" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Localização</a>
             </nav>
           </div>
