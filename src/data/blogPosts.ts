@@ -217,4 +217,149 @@ export const blogPosts: BlogPost[] = [
 <p>Em <strong>Conselheiro Lafaiete</strong>, a Auto Prime é referência em suspensão. <a href="/#orcamento">Agende uma revisão preventiva</a>.</p>
     `,
   },
+  {
+    slug: "oficina-de-suspensao-em-lafaiete",
+    title: "Oficina de Suspensão em Lafaiete: Como Escolher a Melhor",
+    description:
+      "Guia para escolher a melhor oficina de suspensão em Conselheiro Lafaiete MG. Critérios, garantias e diferenciais da Auto Prime.",
+    date: "2025-02-10",
+    readTime: "6 min",
+    category: "SEO Local",
+    excerpt:
+      "Descubra como escolher uma oficina de suspensão confiável em Conselheiro Lafaiete e por que a Auto Prime é referência regional.",
+    content: `
+<p>Procurar uma <strong>oficina de suspensão em Lafaiete</strong> exige atenção. A escolha errada pode custar caro em segurança e dinheiro. Veja o que avaliar antes de fechar o serviço.</p>
+
+<h2>1. Especialização real em suspensão</h2>
+<p>Oficinas generalistas atendem tudo, mas especializadas em <strong>amortecedores, molas, pivôs e direção hidráulica</strong> têm mais experiência e diagnósticos precisos.</p>
+
+<h2>2. Atendimento em Conselheiro Lafaiete e região</h2>
+<p>A Auto Prime atende Lafaiete e cidades vizinhas como Catas Altas da Noruega, Congonhas, Ouro Branco, Itaverava, Queluzito e Santana dos Montes.</p>
+
+<h2>3. Garantia em peças e mão de obra</h2>
+<p>Trabalhamos com peças <strong>Cofap, Monroe e Nakata</strong> com garantia do fabricante e mão de obra garantida.</p>
+
+<h2>4. Diagnóstico honesto e orçamento gratuito</h2>
+<p>Fuja de quem cobra para olhar. Diagnóstico de suspensão em oficina especializada deve ser <strong>gratuito e transparente</strong>.</p>
+
+<h2>5. Avaliações de outros clientes</h2>
+<p>Verifique reviews no Google e redes sociais. Reputação local em Lafaiete é o melhor termômetro.</p>
+
+<h2>Por que escolher a Auto Prime Suspensões</h2>
+<ul>
+  <li>Anos de experiência em suspensão automotiva.</li>
+  <li>Atendimento em Conselheiro Lafaiete e região.</li>
+  <li>Peças de marcas reconhecidas com garantia.</li>
+  <li>Orçamento via WhatsApp sem compromisso.</li>
+</ul>
+
+<p><a href="/#orcamento">Solicite seu orçamento</a> e descubra por que somos a oficina de suspensão preferida em Lafaiete MG.</p>
+    `,
+  },
+  {
+    slug: "troca-de-bieleta-mg",
+    title: "Troca de Bieleta em MG: Quando Fazer e Quanto Custa",
+    description:
+      "Tudo sobre troca de bieleta em Minas Gerais: sintomas, preço médio e onde fazer com qualidade em Conselheiro Lafaiete.",
+    date: "2025-02-08",
+    readTime: "5 min",
+    category: "Serviços",
+    excerpt:
+      "Bieleta com folga gera ruídos e instabilidade. Veja sintomas, preço médio e onde trocar bieleta em MG com garantia.",
+    content: `
+<p>A <strong>bieleta</strong> (link da barra estabilizadora) é uma peça pequena, mas essencial. Ela conecta a barra estabilizadora aos braços da suspensão, mantendo o carro estável em curvas. Veja tudo sobre <strong>troca de bieleta em MG</strong>.</p>
+
+<h2>O que é a bieleta?</h2>
+<p>É uma haste com terminais esféricos nas extremidades. Quando a borracha ou a esfera desgastam, surgem ruídos e perda de estabilidade.</p>
+
+<h2>Sintomas de bieleta com defeito</h2>
+<ul>
+  <li>Ruídos metálicos ao passar em buracos pequenos.</li>
+  <li>Estalos em curvas ou ao girar o volante parado.</li>
+  <li>Sensação de "carro solto" em curvas.</li>
+  <li>Volante vibrando em baixa velocidade.</li>
+</ul>
+
+<h2>Quanto custa trocar bieleta em Minas Gerais?</h2>
+<p>O valor varia conforme o modelo, mas em <strong>Conselheiro Lafaiete e região</strong> a faixa média é acessível. Sempre recomendamos trocar <strong>aos pares</strong> (lado direito e esquerdo) para manter o equilíbrio.</p>
+
+<h2>Por que não adiar a troca?</h2>
+<p>Bieleta com folga acelera o desgaste de amortecedores, pivôs e da própria barra estabilizadora — gerando contas bem maiores depois.</p>
+
+<h2>Troca de bieleta em Lafaiete MG</h2>
+<p>Na Auto Prime fazemos troca de bieleta com peças de qualidade e garantia. Diagnóstico rápido e orçamento gratuito. <a href="/#orcamento">Fale conosco pelo WhatsApp</a>.</p>
+    `,
+  },
+  {
+    slug: "direcao-hidraulica-vazando-lafaiete",
+    title: "Direção Hidráulica Vazando: O Que Fazer em Conselheiro Lafaiete",
+    description:
+      "Direção hidráulica vazando? Veja causas, riscos e onde consertar caixa de direção e bomba em Conselheiro Lafaiete MG.",
+    date: "2025-02-05",
+    readTime: "6 min",
+    category: "Direção Hidráulica",
+    excerpt:
+      "Vazamento na direção hidráulica não pode ser ignorado. Entenda causas, riscos e a solução em oficina especializada em Lafaiete.",
+    content: `
+<p>A <strong>direção hidráulica vazando</strong> é um dos problemas mais frequentes em veículos com mais de 5 anos. Identificar cedo evita travamento do volante e custos altos.</p>
+
+<h2>Como identificar vazamento</h2>
+<ul>
+  <li>Mancha de óleo avermelhado embaixo do carro.</li>
+  <li>Volante pesado, principalmente a frio.</li>
+  <li>Ruído de bomba "chiando" ao virar o volante.</li>
+  <li>Reservatório de fluido baixando rapidamente.</li>
+</ul>
+
+<h2>Principais causas</h2>
+<ul>
+  <li><strong>Retentores ressecados</strong> da caixa de direção.</li>
+  <li><strong>Mangueiras de pressão e retorno</strong> furadas ou ressecadas.</li>
+  <li><strong>Bomba hidráulica</strong> com vedação comprometida.</li>
+  <li>Falta de manutenção do fluido (deve ser trocado a cada 40 mil km).</li>
+</ul>
+
+<h2>Riscos de continuar rodando</h2>
+<p>Sem fluido, a bomba "queima" em poucos minutos. O custo de uma bomba nova é muito maior que o conserto preventivo do vazamento.</p>
+
+<h2>Reparo em Conselheiro Lafaiete</h2>
+<p>Na Auto Prime somos especializados em <strong>direção hidráulica em Lafaiete MG</strong>: reparo de caixa de direção, troca de bomba, mangueiras e retentores. Diagnóstico gratuito.</p>
+
+<p><a href="/#orcamento">Solicite orçamento pelo WhatsApp</a> e resolva o vazamento antes que vire um problema caro.</p>
+    `,
+  },
+  {
+    slug: "melhor-amortecedor-para-estradas-de-mg",
+    title: "Qual o Melhor Amortecedor para Estradas de MG?",
+    description:
+      "Comparativo de marcas de amortecedor (Cofap, Monroe, Nakata) ideais para estradas mineiras e cidades como Conselheiro Lafaiete.",
+    date: "2025-02-03",
+    readTime: "5 min",
+    category: "Peças",
+    excerpt:
+      "Estradas mineiras exigem amortecedor reforçado. Veja qual marca escolher para Lafaiete, Ouro Branco, Congonhas e região.",
+    content: `
+<p>As <strong>estradas de Minas Gerais</strong> são conhecidas pelos buracos, lombadas mal sinalizadas e trechos de paralelepípedo. Isso exige amortecedores de qualidade.</p>
+
+<h2>Por que MG exige amortecedor reforçado?</h2>
+<p>O relevo montanhoso e a malha rodoviária com muitos remendos em rotas como BR-040 (Lafaiete - BH) e MG-443 castigam a suspensão.</p>
+
+<h2>Marcas recomendadas</h2>
+
+<h3>Cofap</h3>
+<p>Líder nacional, ótimo custo-benefício. Linha <strong>TurboGás</strong> indicada para uso urbano e estradas mineiras.</p>
+
+<h3>Monroe</h3>
+<p>Excelente conforto e durabilidade. Linha <strong>OESpectrum</strong> recomendada para quem prioriza estabilidade em curvas serranas.</p>
+
+<h3>Nakata</h3>
+<p>Tradição em peças de suspensão, ótima opção para frota e veículos com uso intenso em <strong>Conselheiro Lafaiete e região</strong>.</p>
+
+<h2>Original vs paralelo de qualidade</h2>
+<p><strong>Cofap, Monroe e Nakata fornecem peças para as próprias montadoras</strong> — qualidade equivalente à original por preço menor.</p>
+
+<h2>Onde comprar e instalar em Lafaiete</h2>
+<p>Na Auto Prime trabalhamos com as três marcas e indicamos a melhor para o seu carro e perfil de uso. <a href="/#orcamento">Solicite orçamento</a> e tenha mais segurança nas estradas mineiras.</p>
+    `,
+  },
 ];
