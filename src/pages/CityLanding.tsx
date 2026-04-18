@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, Navigate, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { MessageCircle, Phone, MapPin, CheckCircle2, Wrench, Settings, Clock, ShieldCheck } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,6 +7,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { cities } from "@/data/cities";
 import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setCanonical } from "@/lib/seo";
+import NotFound from "@/pages/NotFound";
 
 const services = [
   { icon: Wrench, title: "Troca de amortecedores", desc: "Dianteiros, traseiros e kit completo." },
