@@ -71,8 +71,18 @@ const FAQPage = () => {
     if (meta)
       meta.setAttribute(
         "content",
-        "Tire suas dúvidas sobre amortecedores, suspensão e direção hidráulica. FAQ da oficina Auto Prime em Conselheiro Lafaiete MG."
+        "Tire suas dúvidas sobre amortecedores, suspensão, buchas, bieletas e direção hidráulica. FAQ da oficina Auto Prime em Conselheiro Lafaiete MG e região."
       );
+
+    const keywords =
+      "FAQ amortecedor, dúvidas suspensão, quanto custa amortecedor Lafaiete, durabilidade amortecedor, troca de amortecedor aos pares, sinais de amortecedor ruim, amortecedor vazando, troca de bieleta, oficina de suspensão Conselheiro Lafaiete, oficina de amortecedores Lafaiete MG, direção hidráulica Lafaiete, garantia em suspensão, Cofap, Monroe, Nakata, Congonhas, Ouro Branco, Catas Altas da Noruega, Itaverava, Cristiano Otoni, Queluzito, Alto Paraopeba MG";
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute("content", keywords);
 
     const schema = {
       "@context": "https://schema.org",
