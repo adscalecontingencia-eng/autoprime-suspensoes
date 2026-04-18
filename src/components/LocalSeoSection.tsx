@@ -1,17 +1,6 @@
 import { MapPin } from "lucide-react";
-
-const cities = [
-  "Conselheiro Lafaiete",
-  "Congonhas",
-  "Ouro Branco",
-  "Catas Altas da Noruega",
-  "Itaverava",
-  "Cristiano Otoni",
-  "Queluzito",
-  "Carandaí",
-  "Entre Rios de Minas",
-  "Desterro de Entre Rios",
-];
+import { Link } from "react-router-dom";
+import { cities } from "@/data/cities";
 
 const LocalSeoSection = () => {
   return (
@@ -41,16 +30,17 @@ const LocalSeoSection = () => {
           </p>
           <div>
             <h3 className="font-display font-semibold text-foreground text-sm md:text-base mb-2 md:mb-3">
-              Cidades atendidas:
+              Páginas por cidade — clique e veja:
             </h3>
             <div className="flex flex-wrap gap-2">
               {cities.map((c) => (
-                <span
-                  key={c}
-                  className="px-3 py-1 text-xs md:text-sm bg-secondary border border-border rounded-full text-muted-foreground"
+                <Link
+                  key={c.slug}
+                  to={`/${c.slug}`}
+                  className="px-3 py-1.5 text-xs md:text-sm bg-secondary border border-border rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
                 >
-                  {c}
-                </span>
+                  {c.name}
+                </Link>
               ))}
             </div>
           </div>

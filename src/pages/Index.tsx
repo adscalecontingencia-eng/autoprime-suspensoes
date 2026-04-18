@@ -16,8 +16,18 @@ import LocationSection from "@/components/LocationSection";
 import SeoContentSection from "@/components/SeoContentSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { useEffect } from "react";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd } from "@/lib/seo";
 
 const Index = () => {
+  useEffect(() => {
+    const cleanup = injectJsonLd(
+      "home-breadcrumb-jsonld",
+      buildBreadcrumbSchema([{ name: "Home", url: SITE_URL }]),
+    );
+    return cleanup;
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <PromoBanner />
