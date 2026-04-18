@@ -45,7 +45,7 @@ const ProblemsSection = () => {
 
         <div className="text-center mt-6 md:mt-10">
           <a
-            href="https://wa.me/5531988480488?text=Ol%C3%A1!%20Identifiquei%20sintomas%20na%20suspens%C3%A3o%20do%20meu%20carro."
+            href="https://wa.me/5531988480488?text=Ol%C3%A1!%20Identifiquei%20um%20barulho%20estranho%20na%20suspens%C3%A3o%20do%20meu%20carro."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 md:px-8 py-2.5 md:py-4 bg-primary text-primary-foreground rounded-lg font-display font-semibold text-sm md:text-lg hover:shadow-glow transition-all hover:scale-105"
