@@ -21,6 +21,53 @@ const BlogPost = () => {
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", post.description);
 
+    const keywordsList = [
+      post.category,
+      "amortecedor",
+      "amortecedor dianteiro",
+      "amortecedor traseiro",
+      "kit amortecedor",
+      "troca de amortecedor",
+      "conserto de amortecedor",
+      "suspensão automotiva",
+      "revisão de suspensão",
+      "barulho na suspensão",
+      "carro batendo em buraco",
+      "bucha da suspensão",
+      "coxim do amortecedor",
+      "bieleta",
+      "pivô de suspensão",
+      "terminal de direção",
+      "mola helicoidal",
+      "direção hidráulica",
+      "caixa de direção",
+      "bomba de direção hidráulica",
+      "Cofap",
+      "Monroe",
+      "Nakata",
+      "oficina de suspensão Conselheiro Lafaiete",
+      "oficina de amortecedores Lafaiete MG",
+      "oficina mecânica Lafaiete",
+      "mecânico de suspensão Lafaiete",
+      "Conselheiro Lafaiete",
+      "Congonhas",
+      "Ouro Branco",
+      "Catas Altas da Noruega",
+      "Itaverava",
+      "Cristiano Otoni",
+      "Queluzito",
+      "Alto Paraopeba",
+      "MG",
+    ];
+
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute("content", keywordsList.join(", "));
+
     const postUrl = `${SITE_URL}/blog/${post.slug}`;
     const articleSchema = {
       "@context": "https://schema.org",
@@ -44,14 +91,7 @@ const BlogPost = () => {
       url: postUrl,
       articleSection: post.category,
       inLanguage: "pt-BR",
-      keywords: [
-        post.category,
-        "amortecedor",
-        "suspensão",
-        "Conselheiro Lafaiete",
-        "MG",
-        "oficina",
-      ].join(", "),
+      keywords: keywordsList.join(", "),
     };
 
     const scriptId = "blog-post-jsonld";
