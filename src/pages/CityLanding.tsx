@@ -88,7 +88,7 @@ const CityLanding = () => {
     return () => cleanups.forEach((fn) => fn());
   }, [city]);
 
-  if (!city) return <Navigate to="/" replace />;
+  if (!city) return <NotFound />;
 
   const whatsappMsg = encodeURIComponent(
     `Olá! Sou de ${city.name} e gostaria de um orçamento de suspensão.`,
