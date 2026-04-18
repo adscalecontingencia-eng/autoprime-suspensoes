@@ -4,14 +4,14 @@ import { ArrowLeft, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const SITE_URL = "https://www.autoprimesuspensoes.com.br";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setCanonical } from "@/lib/seo";
 
 const faqs = [
   {
@@ -67,24 +67,17 @@ const faqs = [
 const FAQPage = () => {
   useEffect(() => {
     document.title = "Perguntas Frequentes (FAQ) | Auto Prime Suspensões Lafaiete";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Tire suas dúvidas sobre amortecedores, suspensão, buchas, bieletas e direção hidráulica. FAQ da oficina Auto Prime em Conselheiro Lafaiete MG e região."
-      );
+    setMeta(
+      "description",
+      "Tire suas dúvidas sobre amortecedores, suspensão, buchas, bieletas e direção hidráulica. FAQ da oficina Auto Prime em Conselheiro Lafaiete MG e região.",
+    );
+    setMeta(
+      "keywords",
+      "FAQ amortecedor, dúvidas suspensão, quanto custa amortecedor Lafaiete, durabilidade amortecedor, troca de amortecedor aos pares, sinais de amortecedor ruim, amortecedor vazando, troca de bieleta, oficina de suspensão Conselheiro Lafaiete, oficina de amortecedores Lafaiete MG, direção hidráulica Lafaiete, garantia em suspensão, Cofap, Monroe, Nakata, Congonhas, Ouro Branco, Catas Altas da Noruega, Itaverava, Cristiano Otoni, Queluzito, Alto Paraopeba MG",
+    );
+    setCanonical(`${SITE_URL}/faq`);
 
-    const keywords =
-      "FAQ amortecedor, dúvidas suspensão, quanto custa amortecedor Lafaiete, durabilidade amortecedor, troca de amortecedor aos pares, sinais de amortecedor ruim, amortecedor vazando, troca de bieleta, oficina de suspensão Conselheiro Lafaiete, oficina de amortecedores Lafaiete MG, direção hidráulica Lafaiete, garantia em suspensão, Cofap, Monroe, Nakata, Congonhas, Ouro Branco, Catas Altas da Noruega, Itaverava, Cristiano Otoni, Queluzito, Alto Paraopeba MG";
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (!metaKeywords) {
-      metaKeywords = document.createElement("meta");
-      metaKeywords.setAttribute("name", "keywords");
-      document.head.appendChild(metaKeywords);
-    }
-    metaKeywords.setAttribute("content", keywords);
-
-    const schema = {
+    const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       url: `${SITE_URL}/faq`,
@@ -92,27 +85,21 @@ const FAQPage = () => {
       mainEntity: faqs.map((f) => ({
         "@type": "Question",
         name: f.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: f.a,
-        },
+        acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
     };
 
-    const scriptId = "faq-jsonld";
-    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
-    if (!script) {
-      script = document.createElement("script");
-      script.type = "application/ld+json";
-      script.id = scriptId;
-      document.head.appendChild(script);
-    }
-    script.text = JSON.stringify(schema);
-
-    return () => {
-      const existing = document.getElementById(scriptId);
-      if (existing) existing.remove();
-    };
+    const cleanups = [
+      injectJsonLd("faq-jsonld", faqSchema),
+      injectJsonLd(
+        "faq-breadcrumb-jsonld",
+        buildBreadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "FAQ", url: `${SITE_URL}/faq` },
+        ]),
+      ),
+    ];
+    return () => cleanups.forEach((fn) => fn());
   }, []);
 
   return (
@@ -120,6 +107,7 @@ const FAQPage = () => {
       <Header />
       <main className="pt-20 md:pt-28 pb-10 md:pb-16">
         <div className="container mx-auto px-4 max-w-3xl">
+          <Breadcrumbs items={[{ label: "FAQ" }]} />
           <Link
             to="/"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary text-sm mb-6 transition-colors"

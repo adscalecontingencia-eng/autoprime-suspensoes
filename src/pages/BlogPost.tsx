@@ -3,10 +3,11 @@ import { Calendar, Clock, ArrowLeft, MessageCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect } from "react";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd } from "@/lib/seo";
 
-const SITE_URL = "https://www.autoprimesuspensoes.com.br";
 const LOGO_URL = `${SITE_URL}/favicon.png`;
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 
@@ -94,20 +95,19 @@ const BlogPost = () => {
       keywords: keywordsList.join(", "),
     };
 
-    const scriptId = "blog-post-jsonld";
-    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
-    if (!script) {
-      script = document.createElement("script");
-      script.type = "application/ld+json";
-      script.id = scriptId;
-      document.head.appendChild(script);
-    }
-    script.text = JSON.stringify(articleSchema);
+    const cleanups = [
+      injectJsonLd("blog-post-jsonld", articleSchema),
+      injectJsonLd(
+        "blog-post-breadcrumb-jsonld",
+        buildBreadcrumbSchema([
+          { name: "Home", url: SITE_URL },
+          { name: "Blog", url: `${SITE_URL}/blog` },
+          { name: post.title, url: postUrl },
+        ]),
+      ),
+    ];
 
-    return () => {
-      const existing = document.getElementById(scriptId);
-      if (existing) existing.remove();
-    };
+    return () => cleanups.forEach((fn) => fn());
   }, [post]);
 
   if (!post) return <Navigate to="/blog" replace />;
@@ -117,6 +117,7 @@ const BlogPost = () => {
       <Header />
       <main className="pt-20 md:pt-28 pb-10 md:pb-16">
         <article className="container mx-auto px-4 max-w-3xl">
+          <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: post.title }]} />
           <Link
             to="/blog"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary text-sm mb-6 transition-colors"

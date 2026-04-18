@@ -3,28 +3,32 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect } from "react";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setCanonical } from "@/lib/seo";
 
 const Blog = () => {
   useEffect(() => {
     document.title = "Blog de Suspensão e Amortecedores | Auto Prime Lafaiete MG";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta)
-      meta.setAttribute(
-        "content",
-        "Dicas e artigos sobre suspensão, amortecedores, buchas, bieletas e direção hidráulica por especialistas em Conselheiro Lafaiete MG e região."
-      );
+    setMeta(
+      "description",
+      "Dicas e artigos sobre suspensão, amortecedores, buchas, bieletas e direção hidráulica por especialistas em Conselheiro Lafaiete MG e região.",
+    );
+    setMeta(
+      "keywords",
+      "blog de suspensão, blog de amortecedores, dicas de suspensão automotiva, manutenção de amortecedor, oficina de suspensão Conselheiro Lafaiete, oficina de amortecedores Lafaiete MG, troca de amortecedor, troca de bucha, troca de bieleta, troca de coxim, direção hidráulica Lafaiete, mecânico de suspensão Lafaiete, oficina mecânica MG, Congonhas, Ouro Branco, Catas Altas da Noruega, Itaverava, Cristiano Otoni, Queluzito, Alto Paraopeba, Cofap, Monroe, Nakata",
+    );
+    setCanonical(`${SITE_URL}/blog`);
 
-    const keywords =
-      "blog de suspensão, blog de amortecedores, dicas de suspensão automotiva, manutenção de amortecedor, oficina de suspensão Conselheiro Lafaiete, oficina de amortecedores Lafaiete MG, troca de amortecedor, troca de bucha, troca de bieleta, troca de coxim, direção hidráulica Lafaiete, mecânico de suspensão Lafaiete, oficina mecânica MG, Congonhas, Ouro Branco, Catas Altas da Noruega, Itaverava, Cristiano Otoni, Queluzito, Alto Paraopeba, Cofap, Monroe, Nakata";
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (!metaKeywords) {
-      metaKeywords = document.createElement("meta");
-      metaKeywords.setAttribute("name", "keywords");
-      document.head.appendChild(metaKeywords);
-    }
-    metaKeywords.setAttribute("content", keywords);
+    const cleanup = injectJsonLd(
+      "blog-breadcrumb-jsonld",
+      buildBreadcrumbSchema([
+        { name: "Home", url: SITE_URL },
+        { name: "Blog", url: `${SITE_URL}/blog` },
+      ]),
+    );
+    return cleanup;
   }, []);
 
   return (
@@ -32,6 +36,7 @@ const Blog = () => {
       <Header />
       <main className="pt-20 md:pt-28 pb-10 md:pb-16">
         <div className="container mx-auto px-4">
+          <Breadcrumbs items={[{ label: "Blog" }]} />
           <div className="max-w-4xl mx-auto text-center mb-8 md:mb-12">
             <span className="inline-block text-primary font-display font-semibold text-xs md:text-sm tracking-wider mb-2 md:mb-4">
               BLOG AUTO PRIME
