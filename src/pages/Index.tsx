@@ -13,6 +13,7 @@ import QuoteFormSection from "@/components/QuoteFormSection";
 import BusinessHoursSection from "@/components/BusinessHoursSection";
 import FAQSection from "@/components/FAQSection";
 import LocationSection from "@/components/LocationSection";
+import SeoContentSection from "@/components/SeoContentSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -34,6 +35,7 @@ const Index = () => {
         <QuoteFormSection />
         <BusinessHoursSection />
         <FAQSection />
+        <SeoContentSection />
         <LocationSection />
       </main>
       <Footer />
