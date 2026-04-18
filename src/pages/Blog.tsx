@@ -8,13 +8,23 @@ import { useEffect } from "react";
 
 const Blog = () => {
   useEffect(() => {
-    document.title = "Blog de Suspensão Automotiva | Auto Prime Lafaiete MG";
+    document.title = "Blog de Suspensão e Amortecedores | Auto Prime Lafaiete MG";
     const meta = document.querySelector('meta[name="description"]');
     if (meta)
       meta.setAttribute(
         "content",
-        "Dicas e artigos sobre suspensão, amortecedores e manutenção automotiva por especialistas em Conselheiro Lafaiete MG."
+        "Dicas e artigos sobre suspensão, amortecedores, buchas, bieletas e direção hidráulica por especialistas em Conselheiro Lafaiete MG e região."
       );
+
+    const keywords =
+      "blog de suspensão, blog de amortecedores, dicas de suspensão automotiva, manutenção de amortecedor, oficina de suspensão Conselheiro Lafaiete, oficina de amortecedores Lafaiete MG, troca de amortecedor, troca de bucha, troca de bieleta, troca de coxim, direção hidráulica Lafaiete, mecânico de suspensão Lafaiete, oficina mecânica MG, Congonhas, Ouro Branco, Catas Altas da Noruega, Itaverava, Cristiano Otoni, Queluzito, Alto Paraopeba, Cofap, Monroe, Nakata";
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute("content", keywords);
   }, []);
 
   return (
