@@ -15,40 +15,27 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/problemas-amortecedores</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/5-sinais-de-que-seu-amortecedor-esta-ruim</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/quanto-custa-trocar-amortecedor-em-minas-gerais</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/quando-trocar-a-suspensao-do-carro</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/como-evitar-desgaste-prematuro-da-suspensao</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/oficina-de-suspensao-em-lafaiete</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/troca-de-bieleta-mg</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/direcao-hidraulica-vazando-lafaiete</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.autoprimesuspensoes.com.br/blog/melhor-amortecedor-para-estradas-de-mg</loc>
-    <priority>0.7</priority>
-  </url>
+
+  <!-- Landing pages por cidade -->
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-conselheiro-lafaiete</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-congonhas</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-ouro-branco</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-catas-altas-da-noruega</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-itaverava</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-cristiano-otoni</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-queluzito</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-entre-rios-de-minas</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-carandai</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-desterro-de-entre-rios</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog posts -->
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/problemas-amortecedores</loc><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/5-sinais-de-que-seu-amortecedor-esta-ruim</loc><priority>0.7</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/quanto-custa-trocar-amortecedor-em-minas-gerais</loc><priority>0.7</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/quando-trocar-a-suspensao-do-carro</loc><priority>0.7</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/como-evitar-desgaste-prematuro-da-suspensao</loc><priority>0.7</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/oficina-de-suspensao-em-lafaiete</loc><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/troca-de-bieleta-mg</loc><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/direcao-hidraulica-vazando-lafaiete</loc><priority>0.8</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/blog/melhor-amortecedor-para-estradas-de-mg</loc><priority>0.7</priority></url>
 </urlset>
