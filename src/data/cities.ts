@@ -50,7 +50,7 @@ export const cities: CityLanding[] = [
     state: "MG",
     distanceKm: 40,
     intro:
-      "Motoristas de Itaverava encontram em Conselheiro Lafaiete uma oficina especializada exclusivamente em suspensão e direção hidráulica. Atendimento honesto, orçamento sem compromisso e peças de marcas reconhecidas.",
+      "Motoristas de Itaverava encontram em Conselheiro Lafaiete uma oficina especializada em suspensão e direção hidráulica. Atendimento honesto, orçamento sem compromisso e peças de marcas reconhecidas.",
     neighborhoods: ["Centro", "Distritos rurais"],
   },
   {

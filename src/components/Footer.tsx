@@ -45,6 +45,8 @@ const Footer = () => {
               <a href="#servicos" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Serviços</a>
               <a href="#galeria" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Trabalhos</a>
               <Link to="/blog" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Blog</Link>
+              <Link to="/alinhamento-3d-conselheiro-lafaiete" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Alinhamento 3D</Link>
+              <Link to="/balanceamento-de-rodas-conselheiro-lafaiete" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Balanceamento de rodas</Link>
               <a href="#localizacao" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Localização</a>
             </nav>
           </div>

@@ -9,6 +9,8 @@ import BlogPost from "./pages/BlogPost";
 import FAQ from "./pages/FAQ";
 import CityLanding from "./pages/CityLanding";
 import NotFound from "./pages/NotFound";
+import WheelServicePage from "./pages/WheelServicePage";
+import { wheelServices } from "./data/wheelServices";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +27,9 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FAQ />} />
+          {wheelServices.map((service) => (
+            <Route key={service.id} path={service.path} element={<WheelServicePage service={service} />} />
+          ))}
           <Route path="/:citySlug" element={<CityLanding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

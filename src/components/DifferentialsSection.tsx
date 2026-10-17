@@ -4,7 +4,7 @@ import { Zap, ShieldCheck, Award, DollarSign, Eye, MessageCircle } from "lucide-
 const items = [
   { icon: Zap, title: "Atendimento rápido", desc: "Diagnóstico ágil em Conselheiro Lafaiete sem fila de espera." },
   { icon: ShieldCheck, title: "Garantia nos serviços", desc: "Mão de obra com garantia e peças com garantia de fábrica." },
-  { icon: Award, title: "Profissionais especializados", desc: "Mais de 10 anos focados exclusivamente em suspensão automotiva." },
+  { icon: Award, title: "Profissionais especializados", desc: "Mais de 10 anos de experiência em suspensão automotiva." },
   { icon: DollarSign, title: "Preço justo", desc: "Orçamento transparente, sem taxas escondidas." },
   { icon: Eye, title: "Diagnóstico honesto", desc: "Indicamos só o necessário. Sem empurrar serviço." },
   { icon: MessageCircle, title: "Atendimento por WhatsApp", desc: "Tire dúvidas e agende pelo seu celular em minutos." },
