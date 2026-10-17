@@ -1,5 +1,38 @@
 export const SITE_URL = "https://www.autoprimesuspensoes.com.br";
 
+// Capture the static homepage test metadata before any route effects run.
+const homeMetadata = {
+  title: document.title,
+  description: document.querySelector('meta[name="description"]')?.getAttribute("content") ?? "",
+  keywords: document.querySelector('meta[name="keywords"]')?.getAttribute("content") ?? "",
+};
+
+export function setPropertyMeta(property: string, content: string) {
+  let el = document.querySelector(`meta[property="${property}"]`);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute("property", property);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+export function setPageMetadata(title: string, description: string, url: string) {
+  document.title = title;
+  setMeta("description", description);
+  setCanonical(url);
+  setPropertyMeta("og:title", title);
+  setPropertyMeta("og:description", description);
+  setPropertyMeta("og:url", url);
+  setMeta("twitter:title", title);
+  setMeta("twitter:description", description);
+}
+
+export function restoreHomeMetadata() {
+  setPageMetadata(homeMetadata.title, homeMetadata.description, `${SITE_URL}/`);
+  setMeta("keywords", homeMetadata.keywords);
+}
+
 export interface BreadcrumbCrumb {
   name: string;
   url: string;
