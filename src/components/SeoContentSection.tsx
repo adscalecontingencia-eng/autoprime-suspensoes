@@ -103,10 +103,10 @@ const SeoContentSection = () => {
           </p>
 
           <p>
-            Trabalhamos exclusivamente com{" "}
+            Trabalhamos com{" "}
             <strong className="text-foreground">suspensão e direção hidráulica</strong>{" "}
-            (não realizamos alinhamento, balanceamento nem direção elétrica), o que nos
-            torna referência técnica em Lafaiete MG. Solicite agora seu orçamento
+            e também realizamos alinhamento 3D e balanceamento de rodas na oficina
+            em Conselheiro Lafaiete MG. Não realizamos manutenção de direção elétrica. Solicite agora seu orçamento
             gratuito pelo WhatsApp <strong className="text-foreground">(31) 98848-0488</strong>{" "}
             e descubra por que somos a oficina de confiança de quem busca qualidade,
             durabilidade e segurança ao dirigir.

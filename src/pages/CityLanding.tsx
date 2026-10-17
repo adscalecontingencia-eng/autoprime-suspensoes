@@ -157,7 +157,7 @@ const CityLanding = () => {
             <ul className="space-y-2 md:space-y-3 mb-5 md:mb-6">
               {[
                 `Atendimento dedicado para clientes de ${city.name} e região do Alto Paraopeba`,
-                "Mecânicos especializados exclusivamente em suspensão e direção hidráulica",
+                "Mecânicos especializados em suspensão e direção hidráulica",
                 "Trabalhamos com Cofap, Monroe, Nakata e outras marcas de confiança",
                 "Garantia em peças (do fabricante) e mão de obra",
                 city.distanceKm > 0

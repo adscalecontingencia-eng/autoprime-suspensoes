@@ -36,7 +36,8 @@ const faqs = [
   },
   {
     q: "Vocês fazem alinhamento e balanceamento?",
-    a: "Não. Somos uma oficina especializada exclusivamente em suspensão e direção hidráulica. Para alinhamento e balanceamento, indicamos parceiros de confiança em Conselheiro Lafaiete.",
+    a: "Sim, fazemos alinhamento 3D e balanceamento de rodas na oficina em Conselheiro Lafaiete. São serviços distintos: o alinhamento avalia a geometria das rodas e o balanceamento corrige desequilíbrios do conjunto roda e pneu. A avaliação indica o serviço adequado.",
+    serviceLinks: true,
   },
   {
     q: "Atendem outras cidades além de Conselheiro Lafaiete?",
@@ -141,6 +142,12 @@ const FAQPage = () => {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-sm md:text-base leading-relaxed">
                   {f.a}
+                  {f.serviceLinks && (
+                    <div className="flex flex-col gap-2 mt-3">
+                      <Link to="/alinhamento-3d-conselheiro-lafaiete" className="text-primary underline">Alinhamento 3D em Conselheiro Lafaiete</Link>
+                      <Link to="/balanceamento-de-rodas-conselheiro-lafaiete" className="text-primary underline">Balanceamento de rodas em Conselheiro Lafaiete</Link>
+                    </div>
+                  )}
                 </AccordionContent>
               </AccordionItem>
             ))}

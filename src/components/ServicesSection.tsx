@@ -1,4 +1,7 @@
 import { Settings, CircleDot, Cog, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { wheelServices } from "@/data/wheelServices";
 
 const ServicesSection = () => {
   const services = [
@@ -63,6 +66,13 @@ const ServicesSection = () => {
         </div>
 
         {/* CTA */}
+        <nav aria-label="Serviços de alinhamento e balanceamento" className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-3 mt-6">
+          {wheelServices.map((service) => (
+            <Button asChild variant="link" key={service.id} className="whitespace-normal h-auto text-left">
+              <Link to={service.path}>{service.name} em Conselheiro Lafaiete</Link>
+            </Button>
+          ))}
+        </nav>
         <div className="text-center mt-6 md:mt-12">
           <a
             href="https://wa.me/5531988480488?text=Olá! Gostaria de agendar um serviço."

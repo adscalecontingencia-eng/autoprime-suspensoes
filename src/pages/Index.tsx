@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import VideoShowcaseSection from "@/components/VideoShowcaseSection";
 import ProblemsSection from "@/components/ProblemsSection";
 import ServicesSection from "@/components/ServicesSection";
+import WheelServicesSection from "@/components/WheelServicesSection";
 import DifferentialsSection from "@/components/DifferentialsSection";
 import GallerySection from "@/components/GallerySection";
 import BrandsSection from "@/components/BrandsSection";
@@ -17,10 +18,11 @@ import SeoContentSection from "@/components/SeoContentSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { useEffect } from "react";
-import { SITE_URL, buildBreadcrumbSchema, injectJsonLd } from "@/lib/seo";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, restoreHomeMetadata } from "@/lib/seo";
 
 const Index = () => {
   useEffect(() => {
+    restoreHomeMetadata();
     const cleanup = injectJsonLd(
       "home-breadcrumb-jsonld",
       buildBreadcrumbSchema([{ name: "Home", url: SITE_URL }]),
@@ -37,6 +39,7 @@ const Index = () => {
         <ProblemsSection />
         <VideoShowcaseSection />
         <ServicesSection />
+        <WheelServicesSection />
         <DifferentialsSection />
         <GallerySection />
         <BrandsSection />

@@ -16,6 +16,10 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Serviços comerciais -->
+  <url><loc>https://www.autoprimesuspensoes.com.br/alinhamento-3d-conselheiro-lafaiete</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.autoprimesuspensoes.com.br/balanceamento-de-rodas-conselheiro-lafaiete</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
   <!-- Landing pages por cidade -->
   <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-conselheiro-lafaiete</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.autoprimesuspensoes.com.br/oficina-amortecedor-congonhas</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
