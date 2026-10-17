@@ -2,6 +2,7 @@ import { Settings, CircleDot, Cog, ScanLine } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { wheelServices } from "@/data/wheelServices";
+import { mechanicalServices } from "@/data/mechanicalServices";
 
 const ServicesSection = () => {
   const services = [
@@ -9,21 +10,25 @@ const ServicesSection = () => {
       icon: Settings,
       title: "Troca de Amortecedores",
       description: "Substituição de amortecedores dianteiros e traseiros com peças de qualidade.",
+      destination: mechanicalServices[0],
     },
     {
       icon: CircleDot,
       title: "Buchas de Suspensão",
       description: "Troca de buchas, coxins e batentes para melhor conforto e estabilidade.",
+      destination: mechanicalServices[1],
     },
     {
       icon: Cog,
       title: "Manutenção na Direção",
       description: "Reparo e troca de componentes da caixa de direção hidráulica.",
+      destination: mechanicalServices[2],
     },
     {
       icon: ScanLine,
       title: "Alinhamento 3D",
       description: "Avaliação da geometria das rodas e da direção para orientar os ajustes indicados.",
+      destination: wheelServices[0],
     },
   ];
 
@@ -60,6 +65,9 @@ const ServicesSection = () => {
                 <p className="text-xs md:text-base text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
+                <Button asChild variant="link" className="px-0 mt-2 h-auto whitespace-normal text-left">
+                  <Link to={service.destination.path}>Consultar {service.destination.name.toLowerCase()}</Link>
+                </Button>
               </div>
             </div>
           ))}

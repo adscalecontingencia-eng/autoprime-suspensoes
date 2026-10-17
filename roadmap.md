@@ -4,3 +4,9 @@
 - [x] Use temporary typographic logo without editing real images/videos.
 - [x] Audit remnants and test home, blog, FAQ, regional, alignment and balancing on mobile/desktop.
 - [x] Report exact changes, new CTR round and official logo pending; do not publish.
+
+# Commercial service SEO expansion
+- [x] Create three differentiated commercial service pages with metadata, breadcrumbs and service-specific contacts.
+- [x] Add contextual homepage, footer, blog and Lafaiete regional links; preserve homepage CTR metadata and existing routes.
+- [x] Add exactly three sitemap URLs and verify existing sitemap-driven HTML generation without workflow changes.
+- [x] Validate all 27 routes, mobile/desktop, metadata and enquiries; report limitations without publishing.
