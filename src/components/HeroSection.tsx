@@ -34,12 +34,12 @@ const HeroSection = () => {
 
           {/* H1 SEO */}
           <h1 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2 md:mb-4 leading-tight">
-            Oficina Especializada em <span className="text-gradient">Suspensão e Amortecedores</span> em Conselheiro Lafaiete MG
+            Oficina em Conselheiro Lafaiete especializada em <span className="text-gradient">suspensão e amortecedores</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-sm md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 md:mb-8 px-1 leading-tight md:leading-normal">
-            Diagnóstico rápido, garantia no serviço e atendimento especializado para o seu carro. Solicite seu orçamento agora pelo WhatsApp.
+            Troca e recuperação de amortecedores, revisão de suspensão e direção hidráulica. Solicite seu orçamento pelo WhatsApp.
           </p>
 
           {/* CTA Buttons - More compact on mobile */}
