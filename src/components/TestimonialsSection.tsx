@@ -37,13 +37,6 @@ const TestimonialsSection = () => {
       text: "Difícil encontrar quem trabalhe bem com carros antigos. A equipe da Auto Prime tem experiência e dedicação. Meu Corcel está rodando liso!",
       initials: "PH",
     },
-    {
-      name: "Luciana Santos",
-      role: "Toyota Corolla 2022",
-      rating: 5,
-      text: "Atendimento nota 10! Fizeram a recuperação do amortecedor do meu carro rapidamente. A diferença foi incrível. Super recomendo!",
-      initials: "LS",
-    },
   ];
 
   return (

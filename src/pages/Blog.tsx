@@ -6,20 +6,19 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect } from "react";
-import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setCanonical } from "@/lib/seo";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setPageMetadata } from "@/lib/seo";
 
 const Blog = () => {
   useEffect(() => {
-    document.title = "Blog de Suspensão e Amortecedores | Auto Prime Lafaiete MG";
-    setMeta(
-      "description",
+    setPageMetadata(
+      "Blog de Suspensão e Amortecedores | Auto Prime Centro Automotivo",
       "Dicas e artigos sobre suspensão, amortecedores, buchas, bieletas e direção hidráulica por especialistas em Conselheiro Lafaiete MG e região.",
+      `${SITE_URL}/blog`,
     );
     setMeta(
       "keywords",
       "blog de suspensão, blog de amortecedores, dicas de suspensão automotiva, manutenção de amortecedor, oficina de suspensão Conselheiro Lafaiete, oficina de amortecedores Lafaiete MG, troca de amortecedor, troca de bucha, troca de bieleta, troca de coxim, direção hidráulica Lafaiete, mecânico de suspensão Lafaiete, oficina mecânica MG, Congonhas, Ouro Branco, Catas Altas da Noruega, Itaverava, Cristiano Otoni, Queluzito, Alto Paraopeba, Cofap, Monroe, Nakata",
     );
-    setCanonical(`${SITE_URL}/blog`);
 
     const cleanup = injectJsonLd(
       "blog-breadcrumb-jsonld",

@@ -17,7 +17,7 @@ const LocalSeoSection = () => {
             OFICINA DE <span className="text-gradient">AMORTECEDORES</span> PERTO DE VOCÊ EM LAFAIETE MG
           </h2>
           <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-4 md:mb-6">
-            A <strong className="text-foreground">Auto Prime Suspensões</strong> é referência em manutenção de
+            A <strong className="text-foreground">Auto Prime Centro Automotivo</strong> atua na manutenção de
             suspensão automotiva e troca de amortecedores em <strong className="text-foreground">Conselheiro
             Lafaiete – Minas Gerais</strong>. Localizada no bairro Manoel Correa, atendemos motoristas de
             toda a região do Alto Paraopeba e cidades vizinhas, com diagnóstico honesto, mão de obra

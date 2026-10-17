@@ -60,7 +60,7 @@ const LocationSection = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização Auto Prime Suspensões"
+                title="Localização Auto Prime Centro Automotivo"
                 className="grayscale group-hover:grayscale-0 transition-all duration-500"
               />
               

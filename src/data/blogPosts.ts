@@ -78,9 +78,9 @@ export const blogPosts: BlogPost[] = [
 </ol>
 
 <h2>O que fazer quando identificar o problema</h2>
-<p>A regra de ouro é: <strong>nunca rode com amortecedor comprometido</strong>. Procure uma oficina especializada o quanto antes. Em Conselheiro Lafaiete MG, a Auto Prime Suspensões oferece:</p>
+<p>Ao perceber sinais de desgaste, procure uma oficina especializada para avaliar a segurança do veículo e a necessidade de troca. Em Conselheiro Lafaiete MG, a Auto Prime Centro Automotivo oferece:</p>
 <ul>
-  <li>Diagnóstico honesto e gratuito.</li>
+  <li>Avaliação da suspensão e troca de amortecedores quando indicada.</li>
   <li>Mão de obra especializada em suspensão e direção hidráulica.</li>
   <li>Peças de marcas reconhecidas (Cofap, Monroe, Nakata).</li>
   <li>Garantia em peças e serviços.</li>
@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Fale com especialistas em Conselheiro Lafaiete</h2>
-<p>Se identificou qualquer um desses sinais, não espere o problema piorar. <a href="/#orcamento">Solicite um orçamento sem compromisso</a> ou chame no WhatsApp para um diagnóstico rápido na Auto Prime Suspensões.</p>
+<p>Se identificou qualquer um desses sinais, não espere o problema piorar. <a href="/#orcamento">Solicite um orçamento sem compromisso</a> ou chame no WhatsApp para avaliar a suspensão na Auto Prime Centro Automotivo.</p>
     `,
   },
   {
@@ -130,7 +130,7 @@ export const blogPosts: BlogPost[] = [
 <p>Inspecione visualmente: se houver óleo escorrendo pela haste do amortecedor, ele precisa ser trocado imediatamente.</p>
 
 <h2>O que fazer ao identificar esses sinais?</h2>
-<p>Procure uma <strong>oficina especializada em suspensão em Conselheiro Lafaiete</strong>. Na Auto Prime Suspensões, fazemos diagnóstico rápido e honesto. <a href="/#orcamento">Solicite seu orçamento</a> ou fale conosco pelo WhatsApp.</p>
+<p>Procure uma <strong>oficina especializada em suspensão em Conselheiro Lafaiete</strong>. Na Auto Prime Centro Automotivo, avaliamos os componentes e indicamos a troca quando necessária. <a href="/#orcamento">Solicite seu orçamento</a> ou fale conosco pelo WhatsApp.</p>
     `,
   },
   {
@@ -245,7 +245,7 @@ export const blogPosts: BlogPost[] = [
 <h2>5. Avaliações de outros clientes</h2>
 <p>Verifique reviews no Google e redes sociais. Reputação local em Lafaiete é o melhor termômetro.</p>
 
-<h2>Por que escolher a Auto Prime Suspensões</h2>
+<h2>Por que escolher a Auto Prime Centro Automotivo</h2>
 <ul>
   <li>Anos de experiência em suspensão automotiva.</li>
   <li>Atendimento em Conselheiro Lafaiete e região.</li>

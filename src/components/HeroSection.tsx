@@ -1,6 +1,6 @@
 import { Play, MapPin, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import logo from "@/assets/logo.png";
+import BrandLockup from "@/components/BrandLockup";
 
 const HeroSection = () => {
   return (
@@ -26,11 +26,7 @@ const HeroSection = () => {
           </div>
 
           {/* Logo */}
-          <img 
-            src={logo} 
-            alt="Auto Prime Suspensões - Oficina de amortecedores em Conselheiro Lafaiete MG" 
-            className="h-24 md:h-24 lg:h-32 w-auto mx-auto mb-3 md:mb-6"
-          />
+          <BrandLockup className="mb-5 md:mb-8" />
 
           {/* H1 SEO */}
           <h1 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2 md:mb-4 leading-tight">
@@ -39,7 +35,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-sm md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 md:mb-8 px-1 leading-tight md:leading-normal">
-            Troca e recuperação de amortecedores, revisão de suspensão e direção hidráulica. Solicite seu orçamento pelo WhatsApp.
+            Troca de amortecedores, revisão de suspensão, alinhamento 3D, balanceamento de rodas e direção hidráulica. Solicite seu orçamento pelo WhatsApp.
           </p>
 
           {/* CTA Buttons - More compact on mobile */}

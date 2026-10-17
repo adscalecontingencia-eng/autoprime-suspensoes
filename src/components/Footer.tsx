@@ -1,6 +1,6 @@
 import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
+import BrandLockup from "@/components/BrandLockup";
 
 const Footer = () => {
   return (
@@ -9,14 +9,10 @@ const Footer = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {/* Brand */}
           <div className="col-span-2">
-            <img 
-              src={logo} 
-              alt="Auto Prime Suspensões" 
-              className="h-10 md:h-14 w-auto mb-3 md:mb-4"
-            />
+            <BrandLockup className="mb-4 md:mb-6" />
             <p className="text-muted-foreground text-xs md:text-base max-w-sm mb-4 md:mb-6">
-              Especialistas em suspensão automotiva em Conselheiro Lafaiete. 
-              Qualidade, confiança e o melhor atendimento para o seu veículo.
+              Manutenção de suspensão, troca de amortecedores, alinhamento 3D,
+              balanceamento de rodas e direção hidráulica em Conselheiro Lafaiete.
             </p>
             <div className="flex items-center gap-3 md:gap-4">
               <a
@@ -77,7 +73,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-6 md:mt-12 pt-4 md:pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4">
           <p className="text-[10px] md:text-sm text-muted-foreground text-center md:text-left">
-            © 2024 Auto Prime Suspensões. Todos os direitos reservados.
+            © 2026 Auto Prime Centro Automotivo. Todos os direitos reservados.
           </p>
           <p className="text-[10px] md:text-xs text-muted-foreground/60">
             Desenvolvido com ❤️ para você

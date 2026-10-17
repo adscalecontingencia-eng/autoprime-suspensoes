@@ -1,4 +1,4 @@
-import { Settings, CircleDot, Cog, Zap } from "lucide-react";
+import { Settings, CircleDot, Cog, ScanLine } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { wheelServices } from "@/data/wheelServices";
@@ -21,9 +21,9 @@ const ServicesSection = () => {
       description: "Reparo e troca de componentes da caixa de direção hidráulica.",
     },
     {
-      icon: Zap,
-      title: "Reparo em Amortecedores",
-      description: "Recuperação e manutenção de amortecedores com qualidade garantida.",
+      icon: ScanLine,
+      title: "Alinhamento 3D",
+      description: "Avaliação da geometria das rodas e da direção para orientar os ajustes indicados.",
     },
   ];
 

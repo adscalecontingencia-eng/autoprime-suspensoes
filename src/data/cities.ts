@@ -86,7 +86,7 @@ export const cities: CityLanding[] = [
     state: "MG",
     distanceKm: 50,
     intro:
-      "A Auto Prime Suspensões atende motoristas de Carandaí MG em Conselheiro Lafaiete. Especialistas em amortecedores, suspensão e direção hidráulica para carros, SUVs e picapes.",
+      "A Auto Prime Centro Automotivo atende motoristas de Carandaí MG em Conselheiro Lafaiete. Especialistas em troca de amortecedores, suspensão e direção hidráulica para carros, SUVs e picapes.",
     neighborhoods: ["Centro", "Pedra do Sino", "Hermilo Alves"],
   },
   {
