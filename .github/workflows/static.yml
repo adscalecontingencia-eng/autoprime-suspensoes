@@ -37,6 +37,14 @@ jobs:
       - name: Add SPA fallback (404.html)
         run: cp dist/index.html dist/404.html
 
+      # Give every sitemap URL its own .html file (served without redirect) so GitHub Pages answers 200 instead of 404.
+      - name: Add HTML entry for each sitemap route
+        run: |
+          grep -o '<loc>[^<]*' public/sitemap.xml | sed 's#<loc>https://www.autoprimesuspensoes.com.br/\?##' | while read -r p; do
+            [ -z "$p" ] && continue
+            mkdir -p "dist/$(dirname "$p")" && cp dist/index.html "dist/$p.html"
+          done
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
