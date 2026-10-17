@@ -1,6 +1,6 @@
 const WhatsAppButton = () => {
   const phoneNumber = "5531988480488";
-  const message = "Olá! Gostaria de saber mais sobre os serviços da Auto Prime Suspensões.";
+  const message = "Olá! Gostaria de saber mais sobre os serviços da Auto Prime Centro Automotivo.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

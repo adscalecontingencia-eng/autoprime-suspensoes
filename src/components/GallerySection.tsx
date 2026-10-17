@@ -4,7 +4,6 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
 
 const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<null | {
@@ -33,11 +32,6 @@ const GallerySection = () => {
       src: gallery5,
       title: "Revisão da Suspensão Completa",
       description: "Análise completa de todos os componentes da suspensão do veículo. Verificamos amortecedores, molas, coxins, buchas, bandejas e pivôs. Garantimos o diagnóstico preciso e orçamento detalhado.",
-    },
-    {
-      src: gallery6,
-      title: "Recuperação de Amortecedor",
-      description: "Serviço especializado de recuperação e recondicionamento de amortecedores. Trocamos retentores, válvulas e óleo, devolvendo a eficiência original da peça. Economia com qualidade garantida.",
     },
   ];
 

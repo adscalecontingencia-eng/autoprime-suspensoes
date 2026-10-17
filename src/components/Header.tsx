@@ -1,6 +1,7 @@
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import BrandLockup from "@/components/BrandLockup";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +26,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-12 md:h-20">
           {/* Nome da Oficina */}
           <a href="#inicio" className="flex items-center">
-            <span className="font-display font-bold text-sm md:text-xl text-foreground">
-              AUTO <span className="text-primary">PRIME</span>
-            </span>
+            <BrandLockup compact />
           </a>
 
           {/* Desktop Navigation */}
