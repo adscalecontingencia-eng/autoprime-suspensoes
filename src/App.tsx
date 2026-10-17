@@ -27,9 +27,8 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FAQ />} />
-          {wheelServices.map((service) => (
-            <Route key={service.id} path={service.path} element={<WheelServicePage service={service} />} />
-          ))}
+          <Route path="/alinhamento-3d-conselheiro-lafaiete" element={<WheelServicePage service={wheelServices[0]} />} />
+          <Route path="/balanceamento-de-rodas-conselheiro-lafaiete" element={<WheelServicePage service={wheelServices[1]} />} />
           <Route path="/:citySlug" element={<CityLanding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
