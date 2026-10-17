@@ -51,7 +51,7 @@ const QuoteFormSection = () => {
   };
 
   return (
-    <section id="orcamento" className="py-10 md:py-20 bg-secondary">
+    <section id="orcamento" className="py-10 md:py-20 bg-secondary overflow-x-hidden">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 [&>*]:min-w-0 gap-6 md:gap-12 items-center">
           <motion.div
