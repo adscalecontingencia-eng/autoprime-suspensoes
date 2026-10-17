@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { cities } from "@/data/cities";
-import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setCanonical } from "@/lib/seo";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setPageMetadata } from "@/lib/seo";
 import NotFound from "@/pages/NotFound";
 
 const services = [
@@ -24,14 +24,10 @@ const CityLanding = () => {
     if (!city) return;
 
     const url = `${SITE_URL}/${city.slug}`;
-    const title = `Oficina de Amortecedor em ${city.name} ${city.state} | Auto Prime Suspensões`;
+    const title = `Oficina de Amortecedor em ${city.name} ${city.state} | Auto Prime Centro Automotivo`;
     const description = `Oficina especializada em suspensão e amortecedores para motoristas de ${city.name} ${city.state}. Troca de amortecedor, buchas, bieletas e direção hidráulica. Orçamento gratuito pelo WhatsApp.`;
 
-    document.title = title;
-    setMeta(
-      "description",
-      description,
-    );
+    setPageMetadata(title, description, url);
     setMeta(
       "keywords",
       [
@@ -39,7 +35,6 @@ const CityLanding = () => {
         `oficina de suspensão ${city.name}`,
         `troca de amortecedor ${city.name} ${city.state}`,
         `mecânico de suspensão ${city.name}`,
-        `conserto de amortecedor ${city.name}`,
         `direção hidráulica ${city.name}`,
         `kit amortecedor ${city.name}`,
         `bucha da suspensão ${city.name}`,
@@ -53,7 +48,6 @@ const CityLanding = () => {
         "MG",
       ].join(", "),
     );
-    setCanonical(url);
 
     const breadcrumb = buildBreadcrumbSchema([
       { name: "Home", url: SITE_URL },
@@ -63,7 +57,7 @@ const CityLanding = () => {
     const localBusiness = {
       "@context": "https://schema.org",
       "@type": "AutoRepair",
-      name: `Auto Prime Suspensões — Atendimento em ${city.name}`,
+      name: "Auto Prime Centro Automotivo",
       description,
       url,
       telephone: "+55-31-98848-0488",

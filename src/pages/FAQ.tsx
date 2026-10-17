@@ -11,7 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setCanonical } from "@/lib/seo";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setPageMetadata } from "@/lib/seo";
 
 const faqs = [
   {
@@ -67,16 +67,15 @@ const faqs = [
 
 const FAQPage = () => {
   useEffect(() => {
-    document.title = "Perguntas Frequentes (FAQ) | Auto Prime Suspensões Lafaiete";
-    setMeta(
-      "description",
-      "Tire suas dúvidas sobre amortecedores, suspensão, buchas, bieletas e direção hidráulica. FAQ da oficina Auto Prime em Conselheiro Lafaiete MG e região.",
+    setPageMetadata(
+      "Perguntas Frequentes (FAQ) | Auto Prime Centro Automotivo",
+      "Dúvidas sobre troca de amortecedores, suspensão, alinhamento 3D, balanceamento e direção hidráulica. Auto Prime Centro Automotivo em Conselheiro Lafaiete.",
+      `${SITE_URL}/faq`,
     );
     setMeta(
       "keywords",
       "FAQ amortecedor, dúvidas suspensão, quanto custa amortecedor Lafaiete, durabilidade amortecedor, troca de amortecedor aos pares, sinais de amortecedor ruim, amortecedor vazando, troca de bieleta, oficina de suspensão Conselheiro Lafaiete, oficina de amortecedores Lafaiete MG, direção hidráulica Lafaiete, garantia em suspensão, Cofap, Monroe, Nakata, Congonhas, Ouro Branco, Catas Altas da Noruega, Itaverava, Cristiano Otoni, Queluzito, Alto Paraopeba MG",
     );
-    setCanonical(`${SITE_URL}/faq`);
 
     const faqSchema = {
       "@context": "https://schema.org",
@@ -125,7 +124,7 @@ const FAQPage = () => {
               Perguntas Frequentes
             </h1>
             <p className="text-sm md:text-base text-muted-foreground">
-              Tire suas dúvidas sobre amortecedores, suspensão e direção hidráulica em
+              Tire suas dúvidas sobre troca de amortecedores, suspensão, alinhamento 3D, balanceamento e direção hidráulica em
               Conselheiro Lafaiete MG.
             </p>
           </header>

@@ -6,9 +6,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect } from "react";
-import { SITE_URL, buildBreadcrumbSchema, injectJsonLd } from "@/lib/seo";
+import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setPageMetadata } from "@/lib/seo";
 
-const LOGO_URL = `${SITE_URL}/favicon.png`;
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 const BlogPost = () => {
@@ -18,9 +17,7 @@ const BlogPost = () => {
   useEffect(() => {
     if (!post) return;
 
-    document.title = `${post.title} | Auto Prime Suspensões`;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", post.description);
+    setPageMetadata(`${post.title} | Auto Prime Centro Automotivo`, post.description, `${SITE_URL}/blog/${post.slug}`);
 
     const keywordsList = [
       post.category,
@@ -29,7 +26,6 @@ const BlogPost = () => {
       "amortecedor traseiro",
       "kit amortecedor",
       "troca de amortecedor",
-      "conserto de amortecedor",
       "suspensão automotiva",
       "revisão de suspensão",
       "barulho na suspensão",
@@ -80,13 +76,12 @@ const BlogPost = () => {
       dateModified: post.date,
       author: {
         "@type": "Organization",
-        name: "Auto Prime Suspensões",
+        name: "Auto Prime Centro Automotivo",
         url: SITE_URL,
       },
       publisher: {
         "@type": "Organization",
-        name: "Auto Prime Suspensões",
-        logo: { "@type": "ImageObject", url: LOGO_URL },
+        name: "Auto Prime Centro Automotivo",
       },
       mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
       url: postUrl,
