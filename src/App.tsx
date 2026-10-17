@@ -11,6 +11,8 @@ import CityLanding from "./pages/CityLanding";
 import NotFound from "./pages/NotFound";
 import WheelServicePage from "./pages/WheelServicePage";
 import { wheelServices } from "./data/wheelServices";
+import MechanicalServicePage from "./pages/MechanicalServicePage";
+import { mechanicalServices } from "./data/mechanicalServices";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,9 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FAQ />} />
+          {mechanicalServices.map((service) => (
+            <Route key={service.id} path={service.path} element={<MechanicalServicePage service={service} />} />
+          ))}
           <Route path="/alinhamento-3d-conselheiro-lafaiete" element={<WheelServicePage service={wheelServices[0]} />} />
           <Route path="/balanceamento-de-rodas-conselheiro-lafaiete" element={<WheelServicePage service={wheelServices[1]} />} />
           <Route path="/:citySlug" element={<CityLanding />} />

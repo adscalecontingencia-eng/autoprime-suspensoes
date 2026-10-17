@@ -8,6 +8,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { cities } from "@/data/cities";
 import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setMeta, setPageMetadata } from "@/lib/seo";
 import NotFound from "@/pages/NotFound";
+import { mechanicalServices } from "@/data/mechanicalServices";
+import { Button } from "@/components/ui/button";
 
 const services = [
   { icon: Wrench, title: "Troca de amortecedores", desc: "Dianteiros, traseiros e kit completo." },
@@ -144,6 +146,16 @@ const CityLanding = () => {
           </section>
 
           {/* Local SEO content */}
+          {city.slug === "oficina-amortecedor-conselheiro-lafaiete" && (
+            <section className="mb-10 md:mb-14">
+              <h2 className="font-display text-xl md:text-2xl font-bold text-foreground mb-3">Consulte o serviço indicado para o seu carro</h2>
+              <p className="text-sm text-muted-foreground mb-3">Conheça a avaliação e os sintomas de cada serviço realizado na nossa oficina em Conselheiro Lafaiete.</p>
+              <nav aria-label="Serviços da oficina em Lafaiete" className="flex flex-col items-start gap-2">
+                {mechanicalServices.map((service) => <Button asChild variant="link" key={service.id} className="px-0 h-auto whitespace-normal text-left"><Link to={service.path}>{service.name}</Link></Button>)}
+              </nav>
+            </section>
+          )}
+
           <section className="bg-card-gradient border border-border rounded-xl md:rounded-2xl p-5 md:p-10 mb-8 md:mb-12">
             <h2 className="font-display text-xl md:text-3xl font-bold text-foreground mb-3 md:mb-5">
               Por que motoristas de {city.name} escolhem a Auto Prime?

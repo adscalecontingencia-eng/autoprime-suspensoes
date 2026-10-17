@@ -1,6 +1,7 @@
 import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import BrandLockup from "@/components/BrandLockup";
+import { mechanicalServices } from "@/data/mechanicalServices";
 
 const Footer = () => {
   return (
@@ -41,6 +42,9 @@ const Footer = () => {
               <a href="#servicos" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Serviços</a>
               <a href="#galeria" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Trabalhos</a>
               <Link to="/blog" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Blog</Link>
+              {mechanicalServices.map((service) => (
+                <Link key={service.id} to={service.path} className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">{service.name}</Link>
+              ))}
               <Link to="/alinhamento-3d-conselheiro-lafaiete" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Alinhamento 3D</Link>
               <Link to="/balanceamento-de-rodas-conselheiro-lafaiete" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Balanceamento de rodas</Link>
               <a href="#localizacao" className="text-xs md:text-base text-muted-foreground hover:text-primary transition-colors">Localização</a>

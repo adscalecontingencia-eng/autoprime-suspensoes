@@ -7,6 +7,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/data/blogPosts";
 import { useEffect } from "react";
 import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setPageMetadata } from "@/lib/seo";
+import { mechanicalServices } from "@/data/mechanicalServices";
+import { Button } from "@/components/ui/button";
 
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 
@@ -147,6 +149,14 @@ const BlogPost = () => {
               [&_a]:text-primary [&_a]:underline [&_strong]:text-foreground"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {mechanicalServices.filter((service) => service.blogSlugs.includes(post.slug)).map((service) => (
+            <section key={service.id} className="mt-8 py-5 border-y border-border">
+              <h2 className="font-display text-lg font-semibold text-foreground mb-2">{service.name}: avaliação na oficina</h2>
+              <p className="text-sm text-muted-foreground mb-2">Para consultar o atendimento em Conselheiro Lafaiete, veja como a avaliação orienta o serviço e quais informações enviar para o orçamento.</p>
+              <Button asChild variant="link" className="px-0 h-auto whitespace-normal text-left"><Link to={service.path}>Consultar {service.name.toLowerCase()} em Conselheiro Lafaiete</Link></Button>
+            </section>
+          ))}
 
           <div className="mt-8 md:mt-12 p-5 md:p-8 rounded-xl bg-card-gradient border border-primary/30 text-center">
             <h3 className="font-display text-lg md:text-2xl font-bold text-foreground mb-2 md:mb-3">
