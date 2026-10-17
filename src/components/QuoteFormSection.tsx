@@ -53,7 +53,7 @@ const QuoteFormSection = () => {
   return (
     <section id="orcamento" className="py-10 md:py-20 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 [&>*]:min-w-0 gap-6 md:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -95,7 +95,7 @@ const QuoteFormSection = () => {
           >
             <form onSubmit={handleSubmit} className="bg-card border border-border rounded-xl md:rounded-2xl p-4 md:p-8 shadow-xl">
               <div className="space-y-3 md:space-y-4">
-                <div className="grid grid-cols-2 gap-3 md:gap-4">
+                <div className="grid grid-cols-2 [&>*]:min-w-0 gap-3 md:gap-4">
                   <div className="space-y-1 md:space-y-2">
                     <Label htmlFor="name" className="text-xs md:text-sm">Nome</Label>
                     <Input
@@ -120,7 +120,7 @@ const QuoteFormSection = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 md:gap-4">
+                <div className="grid grid-cols-2 [&>*]:min-w-0 gap-3 md:gap-4">
                   <div className="space-y-1 md:space-y-2">
                     <Label htmlFor="vehicle" className="text-xs md:text-sm">Veículo</Label>
                     <Input
