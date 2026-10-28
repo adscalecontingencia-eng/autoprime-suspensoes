@@ -1,6 +1,10 @@
-import { Play, MapPin, ChevronDown } from "lucide-react";
+import { Play, MapPin, Navigation, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import BrandLockup from "@/components/BrandLockup";
+
+// Coordenadas e place ID do pino oficial da oficina (mesmos da seção de Localização)
+const shopCoords = "-20.6542032,-43.7749066";
+const shopPlaceId = "0xa3dfe9622b7e39:0xa9108f79f777834c";
+const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${shopCoords}&destination_place_id=${encodeURIComponent(shopPlaceId)}`;
 
 const HeroSection = () => {
   return (
