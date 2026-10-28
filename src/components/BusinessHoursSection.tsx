@@ -90,7 +90,7 @@ const BusinessHoursSection = () => {
                 </a>
 
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=-20.6542032%2C-43.7749066"
+                  href="https://www.google.com/maps/dir/?api=1&destination=-20.6542032%2C-43.7749066&destination_place_id=0xa3dfe9622b7e39%3A0xa9108f79f777834c"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-background/10 backdrop-blur-sm rounded-lg md:rounded-xl hover:bg-background/20 transition-colors"
