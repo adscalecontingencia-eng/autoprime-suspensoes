@@ -58,6 +58,15 @@ const HeroSection = () => {
             >
               Solicitar Orçamento
             </a>
+            <a
+              href={googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 md:px-8 py-2.5 md:py-4 border border-border text-foreground rounded-lg font-display font-semibold text-sm md:text-lg hover:bg-secondary transition-colors text-center"
+            >
+              <Navigation className="w-4 h-4 md:w-5 md:h-5" />
+              Traçar Rota
+            </a>
           </div>
 
           {/* Stats - More compact on mobile */}
