@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, CircleDot, ScanLine, MapPin, MessageCircle, Chec
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import AlignmentVideoSection from "@/components/AlignmentVideoSection";
 import { Button } from "@/components/ui/button";
 import { wheelServices, serviceWhatsAppUrl, type WheelService } from "@/data/wheelServices";
 import { SITE_URL, buildBreadcrumbSchema, injectJsonLd, setPageMetadata, restoreHomeMetadata } from "@/lib/seo";
@@ -46,6 +47,7 @@ const WheelServicePage = ({ service }: { service: WheelService }) => {
               <p className="leading-relaxed">{service.benefit}</p>
             </div>
           </section>
+          <AlignmentVideoSection showBalancingContext={service.id !== "alignment"} />
           <section className="py-8 md:py-12 grid md:grid-cols-2 gap-8 md:gap-12 border-b border-border">
             <div>
               <h2 className="font-display text-xl md:text-2xl font-bold text-foreground mb-4">Sinais que merecem avaliação</h2>

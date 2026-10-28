@@ -10,3 +10,7 @@
 - [x] Add contextual homepage, footer, blog and Lafaiete regional links; preserve homepage CTR metadata and existing routes.
 - [x] Add exactly three sitemap URLs and verify existing sitemap-driven HTML generation without workflow changes.
 - [x] Validate all 27 routes, mobile/desktop, metadata and enquiries; report limitations without publishing.
+
+# Alignment equipment video
+- [x] Add the owner-uploaded alignment video to the home and dedicated alignment/balancing pages, preserving the presentation video.
+- [ ] Verify video loading, playback controls and mobile/desktop presentation without publishing.
