@@ -23,10 +23,10 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-12 md:h-20">
+        <div className="relative flex items-center justify-end md:justify-between h-12 md:h-20">
           {/* Nome da Oficina */}
-          <a href="#inicio" className="flex items-center">
-            <BrandLockup compact />
+          <a href="#inicio" className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 flex items-center text-center">
+            <BrandLockup compact className="items-center md:items-start" />
           </a>
 
           {/* Desktop Navigation */}
