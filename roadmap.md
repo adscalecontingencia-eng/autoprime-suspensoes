@@ -12,5 +12,6 @@
 - [x] Validate all 27 routes, mobile/desktop, metadata and enquiries; report limitations without publishing.
 
 # Alignment equipment video
+- [ ] Fix alignment video delivery on the actual hosting path and verify playback without publishing.
 - [x] Add the owner-uploaded alignment video to the home and dedicated alignment/balancing pages, preserving the presentation video.
 - [x] Verify CDN video/poster responses and mobile/desktop layout and controls on all three pages; browser playback remains unverified in the test environment (media does not advance). Nothing published.
