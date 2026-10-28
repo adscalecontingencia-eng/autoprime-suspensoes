@@ -1,5 +1,5 @@
-import alignmentVideo from "@/assets/alinhamento-3d.mp4.asset.json";
-import alignmentPoster from "@/assets/alinhamento-3d-poster.jpg.asset.json";
+const alignmentVideoUrl = `${import.meta.env.BASE_URL}videos/alinhamento-3d.mp4`;
+const alignmentPosterUrl = `${import.meta.env.BASE_URL}videos/alinhamento-3d-poster.jpg`;
 
 const AlignmentVideoSection = ({ showBalancingContext = false }: { showBalancingContext?: boolean }) => (
   <section aria-labelledby="alignment-video-heading" className="py-10 md:py-16 bg-background">
@@ -20,11 +20,11 @@ const AlignmentVideoSection = ({ showBalancingContext = false }: { showBalancing
           className="w-full h-full object-contain"
           controls
           playsInline
-          preload="none"
-          poster={alignmentPoster.url}
+          preload="metadata"
+          poster={alignmentPosterUrl}
         >
-          <source src={alignmentVideo.url} type="video/mp4" />
-          Seu navegador não suporta vídeos HTML5. <a href={alignmentVideo.url}>Abrir vídeo de alinhamento 3D</a>.
+          <source src={alignmentVideoUrl} type="video/mp4" />
+          Seu navegador não suporta vídeos HTML5. <a href={alignmentVideoUrl}>Abrir vídeo de alinhamento 3D</a>.
         </video>
       </div>
     </div>

@@ -12,5 +12,7 @@
 - [x] Validate all 27 routes, mobile/desktop, metadata and enquiries; report limitations without publishing.
 
 # Alignment equipment video
+- [x] Fix alignment video delivery using a local fast-start MP4 with AAC-LC audio; validate partial HTTP 206 responses, complete media decoding and all three layouts without publishing.
+- [ ] Confirm playback on a real phone; sandbox browser cannot decode this MP4, so device confirmation is still required.
 - [x] Add the owner-uploaded alignment video to the home and dedicated alignment/balancing pages, preserving the presentation video.
 - [x] Verify CDN video/poster responses and mobile/desktop layout and controls on all three pages; browser playback remains unverified in the test environment (media does not advance). Nothing published.
