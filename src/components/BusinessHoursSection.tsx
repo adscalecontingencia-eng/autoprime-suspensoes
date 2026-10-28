@@ -90,7 +90,7 @@ const BusinessHoursSection = () => {
                 </a>
 
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=Rua+Geraldo+Gerv%C3%A3o+125%2C+Manoel+Correa%2C+Conselheiro+Lafaiete+-+MG"
+                  href="https://www.google.com/maps/dir/?api=1&destination=-20.6542032%2C-43.7749066"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-background/10 backdrop-blur-sm rounded-lg md:rounded-xl hover:bg-background/20 transition-colors"

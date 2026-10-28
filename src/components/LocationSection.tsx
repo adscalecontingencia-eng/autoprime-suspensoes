@@ -2,7 +2,9 @@ import { MapPin, Navigation, Clock, Phone, MessageCircle } from "lucide-react";
 
 const LocationSection = () => {
   const address = "Rua Geraldo Gervão, 125 - Manoel Correa, Conselheiro Lafaiete - MG";
-  const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
+  // Coordenadas exatas do pino da oficina no Google Maps (não geocodificar o endereço em texto)
+  const shopCoords = "-20.6542032,-43.7749066";
+  const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${shopCoords}`;
   
   const contactInfo = [
     {
@@ -53,7 +55,7 @@ const LocationSection = () => {
             >
               {/* Google Maps Embed — busca pelo endereço real da oficina */}
               <iframe
-                src="https://www.google.com/maps?q=Rua+Geraldo+Gerv%C3%A3o+125%2C+Manoel+Correa%2C+Conselheiro+Lafaiete+-+MG&z=16&hl=pt-BR&output=embed"
+                src={`https://www.google.com/maps?q=${shopCoords}&z=17&hl=pt-BR&output=embed`}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
