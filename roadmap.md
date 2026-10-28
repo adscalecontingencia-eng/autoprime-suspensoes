@@ -13,4 +13,4 @@
 
 # Alignment equipment video
 - [x] Add the owner-uploaded alignment video to the home and dedicated alignment/balancing pages, preserving the presentation video.
-- [ ] Verify video loading, playback controls and mobile/desktop presentation without publishing.
+- [x] Verify CDN video/poster responses and mobile/desktop layout and controls on all three pages; browser playback remains unverified in the test environment (media does not advance). Nothing published.
