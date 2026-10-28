@@ -4,7 +4,9 @@ const LocationSection = () => {
   const address = "Rua Geraldo Gervão, 125 - Manoel Correa, Conselheiro Lafaiete - MG";
   // Coordenadas exatas do pino da oficina no Google Maps (não geocodificar o endereço em texto)
   const shopCoords = "-20.6542032,-43.7749066";
-  const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${shopCoords}`;
+  // destination_place_id fixa o destino no lugar certo e faz o Maps mostrar o endereço em vez de "Com alfinete"
+  const shopPlaceId = "0xa3dfe9622b7e39:0xa9108f79f777834c";
+  const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${shopCoords}&destination_place_id=${encodeURIComponent(shopPlaceId)}`;
   
   const contactInfo = [
     {
@@ -55,7 +57,7 @@ const LocationSection = () => {
             >
               {/* Google Maps Embed — busca pelo endereço real da oficina */}
               <iframe
-                src={`https://www.google.com/maps?q=${shopCoords}&z=17&hl=pt-BR&output=embed`}
+                src={`https://www.google.com/maps?q=${encodeURIComponent("R. Geraldo Gervão, 125 - Manoel Correia, Conselheiro Lafaiete - MG, 36401-202")}&ll=${shopCoords}&z=17&hl=pt-BR&output=embed`}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
