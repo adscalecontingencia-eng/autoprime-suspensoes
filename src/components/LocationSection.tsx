@@ -51,16 +51,16 @@ const LocationSection = () => {
               rel="noopener noreferrer"
               className="block aspect-[4/3] md:aspect-square lg:aspect-[4/3] rounded-xl md:rounded-2xl overflow-hidden border border-border shadow-card group"
             >
-              {/* Google Maps Embed */}
+              {/* Google Maps Embed — busca pelo endereço real da oficina */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.5!2d-43.7864!3d-20.6603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDM5JzM3LjEiUyA0M8KwNDcnMTEuMCJX!5e0!3m2!1spt-BR!2sbr!4v1"
+                src="https://www.google.com/maps?q=Rua+Geraldo+Gerv%C3%A3o+125%2C+Manoel+Correa%2C+Conselheiro+Lafaiete+-+MG&z=16&hl=pt-BR&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localização Auto Prime Centro Automotivo"
+                title="Localização Auto Prime Centro Automotivo — Rua Geraldo Gervão, 125"
                 className="grayscale group-hover:grayscale-0 transition-all duration-500"
               />
               
