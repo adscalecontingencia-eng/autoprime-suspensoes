@@ -5,6 +5,7 @@ import VideoShowcaseSection from "@/components/VideoShowcaseSection";
 import ProblemsSection from "@/components/ProblemsSection";
 import ServicesSection from "@/components/ServicesSection";
 import WheelServicesSection from "@/components/WheelServicesSection";
+import AlignmentVideoSection from "@/components/AlignmentVideoSection";
 import DifferentialsSection from "@/components/DifferentialsSection";
 import GallerySection from "@/components/GallerySection";
 import BrandsSection from "@/components/BrandsSection";
@@ -40,6 +41,7 @@ const Index = () => {
         <VideoShowcaseSection />
         <ServicesSection />
         <WheelServicesSection />
+        <AlignmentVideoSection />
         <DifferentialsSection />
         <GallerySection />
         <BrandsSection />

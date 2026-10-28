@@ -1,4 +1,5 @@
 # Architecture rules
+- Reuse AlignmentVideoSection for the home and wheel-service pages, referencing owner-uploaded CDN media so the same equipment video stays consistent without replacing the presentation video.
 - Keep commercial wheel-service data in a shared typed catalog consumed by dedicated routes and homepage links, so service-specific destinations and WhatsApp messages stay consistent.
 - Keep mechanical commercial services in a separate typed catalog and page layout; use catalog references for home, regional and blog links to preserve distinct service intent and enquiry destinations.
 - Use the existing SEO helpers for wheel-service metadata and restore static homepage metadata on return, so client navigation preserves the sequential homepage CTR test.
